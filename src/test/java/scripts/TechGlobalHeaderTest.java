@@ -21,7 +21,7 @@ public class TechGlobalHeaderTest extends TechGlobalBase{
     public void validateTechGlobalHeaderDropdownOptions() {
         driver.findElement(By.id("dropdown-button")).click();
         List<WebElement> dropDownElements = driver.findElements(By.cssSelector(".dropdown-content a"));
-        String[] dropDownElementsActual =
+        String[] dropDownElementsExpected =
                 {
                 "Frontend Testing",
                 "Backend Testing",
@@ -29,7 +29,8 @@ public class TechGlobalHeaderTest extends TechGlobalBase{
                 };
         for (int i = 0; i < dropDownElements.size(); i++) {
             Assert.assertTrue(dropDownElements.get(i).isDisplayed());
-            Assert.assertEquals(dropDownElements.get(i).getText(), dropDownElementsActual[i]);
+            Assert.assertTrue(dropDownElements.get(i).isEnabled());
+            Assert.assertEquals(dropDownElements.get(i).getText(), dropDownElementsExpected[i]);
         }
     }
 }
