@@ -25,6 +25,7 @@ public class Driver {
         if(driver != null){
             driver.manage().deleteAllCookies();
             driver.quit();
+            driver = null;
         }
     }
 }

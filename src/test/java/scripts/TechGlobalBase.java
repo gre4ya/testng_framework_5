@@ -13,8 +13,9 @@ public class TechGlobalBase {
     @BeforeMethod
     public void setup(){
         driver = Driver.getDriver();
-        techGlobalBasePage = new TechGlobalBasePage();
         driver.get("https://techglobal-training.netlify.app");
+        techGlobalBasePage = new TechGlobalBasePage();
+
     }
     @AfterMethod
     public void teardown(){
