@@ -4,11 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pages.TechGlobalBasePage;
+import pages.TechGlobalFrontendTestingHomePage;
 import utilities.Driver;
 
 public class TechGlobalBase {
     WebDriver driver;
     TechGlobalBasePage techGlobalBasePage;
+    TechGlobalFrontendTestingHomePage techGlobalFrontendTestingHomePage;
     @BeforeMethod
     public void setup(){
         driver = Driver.getDriver();
