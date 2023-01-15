@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class _02_Assertions {
-
+/*
     @Test
     public void test1(){
         Assert.assertTrue(true);
@@ -28,11 +28,12 @@ public class _02_Assertions {
 
     @Test
     public void assertionMessages(){
-        //Assert.assertTrue(false, "This validation FAILED");
-        //Assert.assertEquals("Hello", "hello", "This two strings are not equal");
+        Assert.assertTrue(false, "This validation FAILED");
+        Assert.assertEquals("Hello", "hello", "This two strings are not equal");
     }
     @Test
     public void testFail(){
         Assert.fail("This test fails due to BUG: 123ABC");
     }
+ */
 }
