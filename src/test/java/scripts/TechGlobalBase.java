@@ -6,7 +6,6 @@ import org.testng.annotations.BeforeMethod;
 import pages.TechGlobalBasePage;
 import utilities.Driver;
 
-
 public class TechGlobalBase {
     WebDriver driver;
     TechGlobalBasePage techGlobalBasePage;
@@ -15,7 +14,6 @@ public class TechGlobalBase {
         driver = Driver.getDriver();
         driver.get("https://techglobal-training.netlify.app");
         techGlobalBasePage = new TechGlobalBasePage();
-
     }
     @AfterMethod
     public void teardown(){

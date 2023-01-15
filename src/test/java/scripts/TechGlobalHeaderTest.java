@@ -12,7 +12,6 @@ public class TechGlobalHeaderTest extends TechGlobalBase{
     @Test(priority = 1)
     public void validateTechGlobalHeaderDropdownOptions() {
         techGlobalBasePage.headerDropdown.click();
-
         String[] dropDownOptionsExpected =
                 {
                 "Frontend Testing",
