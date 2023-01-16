@@ -86,4 +86,6 @@ public class TechGlobalFrontendTestingHomeTest extends TechGlobalBase{
         Assert.assertTrue(driver.getCurrentUrl().contains("frontend"));
     }
 
+
+
 }

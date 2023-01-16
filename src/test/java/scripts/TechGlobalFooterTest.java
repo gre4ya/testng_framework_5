@@ -22,9 +22,9 @@ public class TechGlobalFooterTest extends TechGlobalBase{
     @Test
     public void validateSocialLinksFooter(){
         for (int i = 0; i < 2; i++) {
-            Assert.assertTrue(techGlobalBasePage.footerParagraphs.get(i).isDisplayed(),
+            Assert.assertTrue(techGlobalBasePage.footerSocialLinks.get(i).isDisplayed(),
                     "Social media links Display Validation in footer FAILED");
-            Assert.assertTrue(techGlobalBasePage.footerParagraphs.get(i).isEnabled(),
+            Assert.assertTrue(techGlobalBasePage.footerSocialLinks.get(i).isEnabled(),
                     "Social media links Enable Validation in footer FAILED");
         }
     }
