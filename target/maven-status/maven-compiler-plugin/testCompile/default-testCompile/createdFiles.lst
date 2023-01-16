@@ -1,5 +1,5 @@
-utilities/Driver.class
 pages/TechGlobalBasePage.class
+utilities/Driver.class
 scripts/TechGlobalLogoTest.class
 scripts/TechGlobalBase.class
 scripts/TechGlobalHeaderTest.class
