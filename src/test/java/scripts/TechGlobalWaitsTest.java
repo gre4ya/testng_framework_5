@@ -1,14 +1,10 @@
 package scripts;
 
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalFrontendTestingHomePage;
 import pages.TechGlobalWaitsPage;
-import utilities.Driver;
 import utilities.Waiter;
 
 public class TechGlobalWaitsTest extends TechGlobalBase {
@@ -18,7 +14,6 @@ public class TechGlobalWaitsTest extends TechGlobalBase {
         techGlobalWaitsPage = new TechGlobalWaitsPage();
         techGlobalFrontendTestingHomePage = new TechGlobalFrontendTestingHomePage();
     }
-
     @Test(priority = 1, description = "Validation red box is visible")
     public void validateRedBox(){
         techGlobalFrontendTestingHomePage.getFrontendTestingPage();
@@ -31,6 +26,5 @@ public class TechGlobalWaitsTest extends TechGlobalBase {
 
         Waiter.waitForVisibilityOfElement(techGlobalWaitsPage.blueBox, 60);
         Assert.assertTrue(techGlobalWaitsPage.blueBox.isDisplayed());
-
     }
 }

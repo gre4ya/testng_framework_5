@@ -25,7 +25,7 @@ public class TechGlobalDynamicElementsTest extends TechGlobalBase{
     }
 
     @Test(priority = 1, description = "Testing Dynamic Web Elements")
-    public void dynamicElementsTest1(){
+    public void dynamicElementsTest(){
 
     techGlobalFrontendTestingHomePage.getFrontendTestingPage();
     techGlobalFrontendTestingHomePage.clickOnCard(2);
