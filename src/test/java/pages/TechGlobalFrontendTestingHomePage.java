@@ -22,8 +22,6 @@ public class TechGlobalFrontendTestingHomePage extends TechGlobalBasePage{
     }
 
 
-
-
     public void clickOnCard(String cardText){
         for (WebElement card : cards) {
             if(card.getText().equals(cardText)){
