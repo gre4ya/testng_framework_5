@@ -1,5 +1,17 @@
+scripts/TechGlobalFooterTest.class
+testng_knowledge/_04_TestDescription.class
+scripts/TechGlobalJavaExercisesHomeTest.class
+pages/TechGlobalDynamicElementsPage.class
+testng_knowledge/_01_Annotations.class
 pages/TechGlobalBasePage.class
+utilities/Waiter.class
+pages/TechGlobalJavaExercisesHomePage.class
+testng_knowledge/_03_Priority_and_Dependency.class
 utilities/Driver.class
+pages/TechGlobalFrontendTestingHomePage.class
+scripts/TechGlobalDynamicElementsTest.class
+scripts/TechGlobalFrontendTestingHomeTest.class
+testng_knowledge/_02_Assertions.class
 scripts/TechGlobalLogoTest.class
 scripts/TechGlobalBase.class
 scripts/TechGlobalHeaderTest.class
