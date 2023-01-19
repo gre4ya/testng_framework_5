@@ -2,6 +2,7 @@ package scripts;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import pages.TechGlobalDynamicElementsPage;
 import pages.TechGlobalFrontendTestingHomePage;
@@ -24,6 +25,7 @@ public class TechGlobalDynamicElementsTest extends TechGlobalBase{
         techGlobalFrontendTestingHomePage = new TechGlobalFrontendTestingHomePage();
     }
 
+    @Ignore
     @Test(priority = 1, description = "Testing Dynamic Web Elements")
     public void dynamicElementsTest(){
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="TestSuite" time="40.337" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="TestSuite" time="40.406" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -65,14 +65,14 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="scripts.TechGlobalFrontendTestingHomeTest" name="validateFrontendTestingCards" time="1.607"/>
-  <testcase classname="scripts.TechGlobalFrontendTestingHomeTest" name="validateFrontendTestingURL" time="0.385"/>
-  <testcase classname="scripts.TechGlobalLogoTest" name="validateTechGlobalLogo" time="0.069"/>
-  <testcase classname="scripts.TechGlobalHeaderTest" name="validateTechGlobalHeaderDropdownOptions" time="0.295"/>
-  <testcase classname="scripts.TechGlobalHeaderTest" name="validateTechGlobalHeaderDropdown" time="0.101"/>
-  <testcase classname="scripts.TechGlobalWaitsTest" name="validateRedBox" time="35.699"/>
-  <testcase classname="scripts.TechGlobalDynamicElementsTest" name="dynamicElementsTest1" time="0.658"/>
-  <testcase classname="scripts.TechGlobalJavaExercisesHomeTest" name="validateJavaExercisesCards" time="1.254"/>
-  <testcase classname="scripts.TechGlobalFooterTest" name="validateCorrectTextDisplayFooter" time="0.106"/>
-  <testcase classname="scripts.TechGlobalFooterTest" name="validateSocialLinksFooter" time="0.163"/>
+  <testcase classname="scripts.TechGlobalJavaExercisesHomeTest" name="validateJavaExercisesCards" time="1.41"/>
+  <testcase classname="scripts.TechGlobalRadioButtonsTest" name="languageRadioButtons" time="0.715"/>
+  <testcase classname="scripts.TechGlobalFooterTest" name="validateCorrectTextDisplayFooter" time="0.139"/>
+  <testcase classname="scripts.TechGlobalFooterTest" name="validateSocialLinksFooter" time="0.167"/>
+  <testcase classname="scripts.TechGlobalFrontendTestingHomeTest" name="validateFrontendTestingCards" time="1.366"/>
+  <testcase classname="scripts.TechGlobalFrontendTestingHomeTest" name="validateFrontendTestingURL" time="0.355"/>
+  <testcase classname="scripts.TechGlobalLogoTest" name="validateTechGlobalLogo" time="0.05"/>
+  <testcase classname="scripts.TechGlobalHeaderTest" name="validateTechGlobalHeaderDropdownOptions" time="0.332"/>
+  <testcase classname="scripts.TechGlobalHeaderTest" name="validateTechGlobalHeaderDropdown" time="0.084"/>
+  <testcase classname="scripts.TechGlobalWaitsTest" name="validateRedBox" time="35.788"/>
 </testsuite>

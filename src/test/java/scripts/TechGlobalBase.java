@@ -14,6 +14,8 @@ public class TechGlobalBase {
     TechGlobalDynamicElementsPage techGlobalDynamicElementsPage;
 
     TechGlobalWaitsPage techGlobalWaitsPage;
+
+    TechGlobalRadioButtonsPage techGlobalRadioButtonsPage;
     @BeforeMethod
     public void setup(){
         driver = Driver.getDriver();
