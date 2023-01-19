@@ -11,10 +11,10 @@ public class TechGlobalRadioButtonsPage extends TechGlobalBasePage{
     public TechGlobalRadioButtonsPage(){PageFactory.initElements(Driver.getDriver(), this);}
 
     @FindBy(css = "#radio-button-group_1 label")
-    public List<WebElement> radioButtonsLabel;
+    public List<WebElement> radioButtonsLabel1;
 
     @FindBy(css = "#radio-button-group_1 input")
-    public List<WebElement> radioButtonsInput;
+    public List<WebElement> radioButtonsInput1;
 
     @FindBy(css = "#radio-button-group_2 label")
     public List<WebElement> radioButtonsLabel2;
