@@ -25,7 +25,6 @@ public class TechGlobalDynamicElementsTest extends TechGlobalBase{
         techGlobalFrontendTestingHomePage = new TechGlobalFrontendTestingHomePage();
     }
 
-    @Ignore
     @Test(priority = 1, description = "Testing Dynamic Web Elements")
     public void dynamicElementsTest(){
 
