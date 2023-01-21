@@ -13,6 +13,7 @@ utilities/Driver.class
 pages/TechGlobalWaitsPage.class
 pages/TechGlobalFrontendTestingHomePage.class
 pages/TechGlobalCheckBoxPage.class
+utilities/ConfigReader.class
 scripts/TechGlobalDynamicElementsTest.class
 pages/TechGlobalRadioButtonsPage.class
 scripts/TechGlobalCheckBoxTest.class

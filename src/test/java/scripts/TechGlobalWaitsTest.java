@@ -9,13 +9,13 @@ import pages.TechGlobalWaitsPage;
 import utilities.Waiter;
 
 public class TechGlobalWaitsTest extends TechGlobalBase {
-    @Ignore
+    //@Ignore
     @BeforeMethod
     public void setPage(){
         techGlobalWaitsPage = new TechGlobalWaitsPage();
         techGlobalFrontendTestingHomePage = new TechGlobalFrontendTestingHomePage();
     }
-    @Ignore
+   // @Ignore
     @Test(priority = 1, description = "Validation red box is visible")
     public void validateRedBox(){
         techGlobalFrontendTestingHomePage.getFrontendTestingPage();
