@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+    <test name="All Functionalities">
+        <classes>
+            <class name="scripts.TechGlobalCheckBoxTest">
+                <methods>
+                    <include name="ValidateCheckboxes1"/>
+                    <include name="ValidateCheckboxes2"/>
+                </methods>
+            </class>
+            <class name="scripts.TechGlobalDynamicElementsTest">
+                <methods>
+                    <include name="dynamicElementsTest"/>
+                </methods>
+            </class>
+            <class name="scripts.TechGlobalFooterTest">
+                <methods>
+                    <include name="validateCorrectTextDisplayFooter"/>
+                    <include name="validateSocialLinksFooter"/>
+                </methods>
+            </class>
+            <class name="scripts.TechGlobalFrontendTestingHomeTest">
+                <methods>
+                    <exclude name="validateFrontendTestingCards"/>
+                    <include name="validateFrontendTestingURL"/>
+                </methods>
+            </class>
+            <class name="scripts.TechGlobalHeaderTest">
+                <methods>
+                    <exclude name="validateTechGlobalHeaderDropdown"/>
+                    <include name="validateTechGlobalHeaderDropdownOptions"/>
+                </methods>
+            </class>
+            <class name="scripts.TechGlobalJavaExercisesHomeTest">
+                <methods>
+                    <include name="validateJavaExercisesCards"/>
+                </methods>
+            </class>
+
+            <class name="scripts.TechGlobalRadioButtonsTest">
+                <methods>
+                    <include name="languageRadioButtons1"/>
+                    <include name="javaRadioButtonValidation"/>
+                    <include name="languageRadioButtons2"/>
+                </methods>
+            </class>
+            <class name="scripts.TechGlobalWaitsTest">
+                <methods>
+                    <include name="validateRedBox"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
