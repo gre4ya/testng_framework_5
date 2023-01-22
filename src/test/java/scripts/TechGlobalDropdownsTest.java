@@ -1,15 +1,13 @@
 package scripts;
 
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalDropdownsPage;
 import pages.TechGlobalFrontendTestingHomePage;
 import utilities.DropdownHandler;
-import utilities.Waiter;
 
-public class techGlobalDropdownsTest extends TechGlobalBase{
+public class TechGlobalDropdownsTest extends TechGlobalBase{
     @BeforeMethod
     public void setPage(){
         techGlobalFrontendTestingHomePage = new TechGlobalFrontendTestingHomePage();

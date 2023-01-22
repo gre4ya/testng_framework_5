@@ -7,12 +7,9 @@ public class WindowHandler {
     static String mainWindow;
     static WebDriver driver;
 
-    static {
-        driver = Driver.getDriver();
-    }
-
 
     public static void switchToChildWindow(){
+        driver = Driver.getDriver();
         mainWindow = driver.getWindowHandle();
         for(String windowId : driver.getWindowHandles()){
             if(!windowId.equals(mainWindow)){
@@ -22,7 +19,7 @@ public class WindowHandler {
         }
     }
 
-    public static void switchBackToParent(){
+    public static void switchBackToParentWindow(){
         driver.switchTo().window(mainWindow);
     }
 }
