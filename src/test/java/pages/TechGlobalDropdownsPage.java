@@ -18,11 +18,11 @@ public class TechGlobalDropdownsPage extends TechGlobalBasePage{
     public WebElement colorDropdownLabel;
     @FindBy()
     public WebElement colorDropdown;
-    @FindBy()
+    @FindBy(xpath = "//div[@id='shipment_dropdown']/../p")
     public WebElement deliveryDropdownLabel;
-    @FindBy()
+    @FindBy(id = "shipment_dropdown")
     public WebElement deliveryDropdown;
-    @FindBy()
+    @FindBy(css = "#shipment_dropdown span")
     public List<WebElement> deliveryDropdownOptions;
     @FindBy()
     public WebElement submitButton;
