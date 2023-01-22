@@ -13,11 +13,8 @@ public class TechGlobalBase {
     TechGlobalFrontendTestingHomePage techGlobalFrontendTestingHomePage;
     TechGlobalJavaExercisesHomePage techGlobalJavaExercisesHomePage;
     TechGlobalDynamicElementsPage techGlobalDynamicElementsPage;
-
     TechGlobalWaitsPage techGlobalWaitsPage;
-
     TechGlobalRadioButtonsPage techGlobalRadioButtonsPage;
-
     TechGlobalCheckBoxPage techGlobalCheckBoxPage;
     TechGlobalDropdownsPage techGlobalDropdownsPage;
     TechGlobalMultipleWindowsPage techGlobalMultipleWindowsPage;

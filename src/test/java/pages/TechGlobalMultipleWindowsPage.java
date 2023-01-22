@@ -13,9 +13,10 @@ public class TechGlobalMultipleWindowsPage extends TechGlobalBasePage{
 
     public void clickOnLink(String linkText){
         for (WebElement link : links){
-            if(link.getText().equals(linkText))
+            if(link.getText().equals(linkText)) {
                 link.click();
                 break;
+            }
         }
     }
 }
