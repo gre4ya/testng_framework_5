@@ -17,9 +17,27 @@ public class TechGlobalMultipleWindowsTest  extends TechGlobalBase{
     }
     @Test(priority = 1, description = "Validate the Apple link")
     public void validateTheAppleLink(){
-        Waiter.pause(2);
+        //Before clicking on Apple Link
+        // 1 window/tab
+        String mainWindow = driver.getWindowHandle();
         techGlobalMultipleWindowsPage.links.get(0).click();
-        Waiter.pause(2);
+
+        // 2 windows/tabs
+
+        for (String windowID : driver.getWindowHandles()) {
+            if(!windowID.equals(mainWindow)) {
+                driver.switchTo().window(windowID);
+                break;
+            }
+
+        }
         Assert.assertEquals(driver.getTitle(), "Apple");
+        driver.close();
+
+        // Go back to TechGlobal page and validate URL
+
+        driver.switchTo().window(mainWindow);
+
+       Assert.assertTrue(driver.getCurrentUrl().contains("techglobal"));
     }
 }
