@@ -35,7 +35,6 @@ public class techGlobalDropdownsTest extends TechGlobalBase{
     @Test(priority = 3, description = "Select Yellow option")
     public void selectColorOption(){
         //new Select(techGlobalDropdownsPage.colorDropdown).selectByVisibleText("Yellow");
-        //Waiter.pause(2);
         DropdownHandler.selectByIndex(techGlobalDropdownsPage.colorDropdown, 1);
     }
     /*
@@ -51,14 +50,12 @@ public class techGlobalDropdownsTest extends TechGlobalBase{
     @Test(priority = 4, description = "Select MecBook Pro 13 option")
     public void selectMacBookOption(){
     DropdownHandler.selectByValue(techGlobalDropdownsPage.productDropdown, "MacBook Pro 13");
-    Waiter.pause(1);
     DropdownHandler.selectByIndex(techGlobalDropdownsPage.colorDropdown, 3);
-    Waiter.pause(1);
-    selectDeliveryOption();
-    Waiter.pause(1);
+    DropdownHandler.clickOnDropdownOption(techGlobalDropdownsPage.deliveryDropdown,
+                                          techGlobalDropdownsPage.deliveryDropdownOptions,
+                                          "Delivery");
     techGlobalDropdownsPage.submitButton.click();
     Assert.assertEquals(techGlobalDropdownsPage.resultMessage.getText(), "Your Silver MacBook Pro 13 will be delivered to you.");
-    Waiter.pause(1);
     }
 
 
