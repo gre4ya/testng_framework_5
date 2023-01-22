@@ -1,5 +1,7 @@
 package scripts;
 
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalDropdownsPage;
@@ -12,14 +14,53 @@ public class techGlobalDropdownsTest extends TechGlobalBase{
     public void setPage(){
         techGlobalFrontendTestingHomePage = new TechGlobalFrontendTestingHomePage();
         techGlobalDropdownsPage = new TechGlobalDropdownsPage();
+        techGlobalFrontendTestingHomePage.getFrontendTestingPage();
+        techGlobalFrontendTestingHomePage.clickOnCard("Dropdowns");
     }
 
     @Test(priority = 1, description = "Select Delivery option")
     public void selectDeliveryOption(){
-        techGlobalFrontendTestingHomePage.getFrontendTestingPage();
-        techGlobalFrontendTestingHomePage.clickOnCard("Dropdowns");
         DropdownHandler.clickOnDropdownOption(techGlobalDropdownsPage.deliveryDropdown,
                                               techGlobalDropdownsPage.deliveryDropdownOptions,
                                               "Delivery");
     }
+    @Test(priority = 2, description = "Select iPhone 14 Pro Max option")
+    public void selectProductOption(){
+        //Select select = new Select(techGlobalDropdownsPage.productDropdown);
+        //select.selectByVisibleText("iPhone 14 Pro Max");
+        //select.selectByIndex(1);
+        //select.deselectByValue("iPhone 14 Pro Max");
+        DropdownHandler.selectByVisibleText(techGlobalDropdownsPage.productDropdown, "iPhone 14 Pro Max");
+    }
+    @Test(priority = 3, description = "Select Yellow option")
+    public void selectColorOption(){
+        //new Select(techGlobalDropdownsPage.colorDropdown).selectByVisibleText("Yellow");
+        //Waiter.pause(2);
+        DropdownHandler.selectByIndex(techGlobalDropdownsPage.colorDropdown, 1);
+    }
+    /*
+    Go to TechGlobal Training app
+    Select Frontend Testing from Practices Dropdown
+    Select Dropdowns card
+    Select "MacBook Pro 13" option from product dropdown
+    Select "Silver" option from the color dropdown
+    Select "Delivery" option from delivery dropdown
+    Click on SUBMIT button
+    Validate "Your Silver MacBook Pro 13 will be delivered to you." message
+     */
+    @Test(priority = 4, description = "Select MecBook Pro 13 option")
+    public void selectMacBookOption(){
+    DropdownHandler.selectByValue(techGlobalDropdownsPage.productDropdown, "MacBook Pro 13");
+    Waiter.pause(1);
+    DropdownHandler.selectByIndex(techGlobalDropdownsPage.colorDropdown, 3);
+    Waiter.pause(1);
+    selectDeliveryOption();
+    Waiter.pause(1);
+    techGlobalDropdownsPage.submitButton.click();
+    Assert.assertEquals(techGlobalDropdownsPage.resultMessage.getText(), "Your Silver MacBook Pro 13 will be delivered to you.");
+    Waiter.pause(1);
+    }
+
+
+
 }
