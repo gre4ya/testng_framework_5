@@ -4,6 +4,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalDropdownsPage;
 import pages.TechGlobalFrontendTestingHomePage;
+import utilities.DropdownHandler;
 import utilities.Waiter;
 
 public class techGlobalDropdownsTest extends TechGlobalBase{
@@ -17,7 +18,8 @@ public class techGlobalDropdownsTest extends TechGlobalBase{
     public void selectDeliveryOption(){
         techGlobalFrontendTestingHomePage.getFrontendTestingPage();
         techGlobalFrontendTestingHomePage.clickOnCard("Dropdowns");
-        techGlobalDropdownsPage.deliveryDropdown.click();
-        techGlobalDropdownsPage.deliveryDropdownOptions.get(0).click();
+        DropdownHandler.clickOnDropdownOption(techGlobalDropdownsPage.deliveryDropdown,
+                                              techGlobalDropdownsPage.deliveryDropdownOptions,
+                                              "Delivery");
     }
 }
