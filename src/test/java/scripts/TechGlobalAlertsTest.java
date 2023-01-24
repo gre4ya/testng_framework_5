@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalAlertsPage;
 import pages.TechGlobalFrontendTestingHomePage;
+
 public class TechGlobalAlertsTest extends TechGlobalBase{
 
     @BeforeMethod
@@ -44,7 +45,39 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
         // Validate the result text
         Assert.assertEquals(techGlobalAlertsPage.result.getText(),
                 "You accepted warning by clicking OK.");
+    }
+    /*
+    CONFIRMATION ALERT
+    Go to https://techglobal-training.netlify.app/
+    Click on "Practices" dropdown in the header
+    Select the "Frontend Testing" option
+    Click on the "Alerts" card
+    Click on "Confirmation alert" button
+    Validate the alert text equals "Would you like to stay on TechGlobal Training application?"
+    Click on "Cancel" button on the alert
+    Validate the result message equals "You rejected the alert by clicking Cancel."
+    Click on "Confirmation alert" button again
+    Click on "OK" button on the alert
+    Validate the result message equals "You confirmed the alert by clicking OK."
+     */
+    @Test(priority = 2, description = "Validate confirmation alert")
+    public void confirmationAlert(){
+        techGlobalAlertsPage.clickOnAlert("Confirmation alert");
+        Alert alert = driver.switchTo().alert();
 
+        Assert.assertEquals(alert.getText(),
+                "Would you like to stay on TechGlobal Training application?");
+        alert.dismiss();
+
+        Assert.assertEquals(techGlobalAlertsPage.result.getText(),
+                "You rejected the alert by clicking Cancel.");
+
+        techGlobalAlertsPage.clickOnAlert("Confirmation alert");
+        alert = driver.switchTo().alert();
+
+        alert.accept();
+        Assert.assertEquals(techGlobalAlertsPage.result.getText(),
+                "You confirmed the alert by clicking OK.");
     }
 
 }
