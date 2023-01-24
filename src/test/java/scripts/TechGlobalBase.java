@@ -18,6 +18,7 @@ public class TechGlobalBase {
     TechGlobalCheckBoxPage techGlobalCheckBoxPage;
     TechGlobalDropdownsPage techGlobalDropdownsPage;
     TechGlobalMultipleWindowsPage techGlobalMultipleWindowsPage;
+    TechGlobalAlertsPage techGlobalAlertsPage;
     @BeforeMethod
     public void setup(){
         driver = Driver.getDriver();
