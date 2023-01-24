@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalAlertsPage;
 import pages.TechGlobalFrontendTestingHomePage;
+import utilities.AlertHandler;
 
 public class TechGlobalAlertsTest extends TechGlobalBase{
 
@@ -28,7 +29,7 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
     Click on "OK" button on the alert
     Validate the result message equals "You accepted warning by clicking OK."
      */
-    @Test(priority = 1, description = "Validate warning alert")
+    @Test(priority = 1, description = "Validate Warning alert")
     public void warningAlert(){
         techGlobalAlertsPage.clickOnAlert("Warning alert");
 
@@ -60,22 +61,22 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
     Click on "OK" button on the alert
     Validate the result message equals "You confirmed the alert by clicking OK."
      */
-    @Test(priority = 2, description = "Validate confirmation alert")
+    @Test(priority = 2, description = "Validate Confirmation alert")
     public void confirmationAlert(){
-        techGlobalAlertsPage.clickOnAlert("Confirmation alert");
-        Alert alert = driver.switchTo().alert();
 
-        Assert.assertEquals(alert.getText(),
+        techGlobalAlertsPage.clickOnAlert("Confirmation alert");
+        Assert.assertEquals(AlertHandler.getAlertText(),
                 "Would you like to stay on TechGlobal Training application?");
-        alert.dismiss();
+
+        AlertHandler.dismissAlert();
 
         Assert.assertEquals(techGlobalAlertsPage.result.getText(),
                 "You rejected the alert by clicking Cancel.");
 
         techGlobalAlertsPage.clickOnAlert("Confirmation alert");
-        alert = driver.switchTo().alert();
 
-        alert.accept();
+        AlertHandler.acceptAlert();
+
         Assert.assertEquals(techGlobalAlertsPage.result.getText(),
                 "You confirmed the alert by clicking OK.");
     }

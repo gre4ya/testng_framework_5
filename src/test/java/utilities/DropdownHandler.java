@@ -23,7 +23,8 @@ public class DropdownHandler {
 
     public static void selectByVisibleText(WebElement dropdown, String text){
         new Select(dropdown).selectByVisibleText(text);
-    }public static void selectByValue(WebElement dropdown, String text){
+    }
+    public static void selectByValue(WebElement dropdown, String text){
         new Select(dropdown).selectByValue(text);
     }
     public static void selectByIndex(WebElement dropdown, int index){
