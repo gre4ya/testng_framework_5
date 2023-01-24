@@ -5,7 +5,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalDynamicTablesPage;
 import pages.TechGlobalFrontendTestingHomePage;
-import utilities.AlertHandler;
 
 public class TechGlobalDynamicTablesTest extends TechGlobalBase{
 
@@ -16,7 +15,6 @@ public class TechGlobalDynamicTablesTest extends TechGlobalBase{
         techGlobalFrontendTestingHomePage.getFrontendTestingPage();
         techGlobalFrontendTestingHomePage.clickOnCard("Dynamic Tables");
     }
-
     /*
     REGULAR MODAL AUTOMATION (this is not a JS alert)
     Go to https://techglobal-training.netlify.app/
