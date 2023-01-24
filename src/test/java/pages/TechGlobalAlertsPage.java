@@ -15,7 +15,7 @@ public class TechGlobalAlertsPage extends TechGlobalBasePage{
 
     public void clickOnAlert(String text){
         for (WebElement alertButton : alertButtons) {
-            if(alertButton.getText().equals("text")) {
+            if(alertButton.getText().equals(text)) {
                 alertButton.click();
                 break;
             }
