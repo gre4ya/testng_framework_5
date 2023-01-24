@@ -22,11 +22,18 @@ public class TechGlobalWaitsTest extends TechGlobalBase {
         techGlobalFrontendTestingHomePage.clickOnCard(3);
 
         techGlobalWaitsPage.redBoxButton.click();
-        techGlobalWaitsPage.blueBoxButton.click();
 
         Assert.assertTrue(techGlobalWaitsPage.redBox.isDisplayed());
+    }
+    @Test(priority = 1, description = "Validation blue box is visible")
+    public void validateBlueBox(){
+        techGlobalFrontendTestingHomePage.getFrontendTestingPage();
+        techGlobalFrontendTestingHomePage.clickOnCard(3);
+
+        techGlobalWaitsPage.blueBoxButton.click();
 
         Waiter.waitForVisibilityOfElement(techGlobalWaitsPage.blueBox, 60);
         Assert.assertTrue(techGlobalWaitsPage.blueBox.isDisplayed());
     }
+
 }

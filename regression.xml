@@ -45,13 +45,10 @@
                     <include name="languageRadioButtons2"/>
                 </methods>
             </class>
-            <class name="scripts.TechGlobalWaitsTest">
-                <methods>
-                    <include name="validateRedBox"/>
-                </methods>
-            </class>
+            <class name="scripts.TechGlobalWaitsTest"/>
             <class name="scripts.TechGlobalDropdownsTest"/>
             <class name="scripts.TechGlobalMultipleWindowsTest"/>
+            <class name="scripts.TechGlobalAlertsTest"/>
         </classes>
     </test>
 </suite>

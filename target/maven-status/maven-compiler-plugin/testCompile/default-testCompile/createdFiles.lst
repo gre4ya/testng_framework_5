@@ -11,10 +11,12 @@ pages/TechGlobalCheckBoxPage.class
 utilities/ConfigReader.class
 scripts/TechGlobalDynamicElementsTest.class
 scripts/TechGlobalCheckBoxTest.class
+utilities/AlertHandler.class
 scripts/TechGlobalFrontendTestingHomeTest.class
 testng_knowledge/_02_Assertions.class
 scripts/TechGlobalBase.class
 pages/TechGlobalMultipleWindowsPage.class
+pages/TechGlobalAlertsPage.class
 scripts/TechGlobalFooterTest.class
 scripts/TechGlobalJavaExercisesHomeTest.class
 scripts/TechGlobalRadioButtonsTest.class
@@ -25,6 +27,7 @@ utilities/Driver.class
 pages/TechGlobalDropdownsPage.class
 pages/TechGlobalRadioButtonsPage.class
 utilities/WindowHandler.class
+scripts/TechGlobalAlertsTest.class
 scripts/TechGlobalLogoTest.class
 scripts/TechGlobalHeaderTest.class
 scripts/TechGlobalMultipleWindowsTest.class

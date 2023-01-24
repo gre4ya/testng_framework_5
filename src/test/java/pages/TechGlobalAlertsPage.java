@@ -21,5 +21,8 @@ public class TechGlobalAlertsPage extends TechGlobalBasePage{
             }
         }
     }
+    public void clickOnPromptAlert(){
+        clickOnAlert("Prompt alert");
+    }
 
 }

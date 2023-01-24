@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="122.497" tests="18" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="168.565" tests="21" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home/jre/lib"/>
@@ -63,22 +63,25 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="ValidateCheckboxes1" classname="scripts.TechGlobalCheckBoxTest" time="1.112"/>
-  <testcase name="ValidateCheckboxes2" classname="scripts.TechGlobalCheckBoxTest" time="1.105"/>
-  <testcase name="dynamicElementsTest" classname="scripts.TechGlobalDynamicElementsTest" time="0.771"/>
-  <testcase name="validateCorrectTextDisplayFooter" classname="scripts.TechGlobalFooterTest" time="0.116"/>
-  <testcase name="validateSocialLinksFooter" classname="scripts.TechGlobalFooterTest" time="0.117"/>
-  <testcase name="validateFrontendTestingURL" classname="scripts.TechGlobalFrontendTestingHomeTest" time="0.583"/>
-  <testcase name="validateTechGlobalHeaderDropdownOptions" classname="scripts.TechGlobalHeaderTest" time="0.291"/>
-  <testcase name="validateJavaExercisesCards" classname="scripts.TechGlobalJavaExercisesHomeTest" time="1.42"/>
-  <testcase name="javaRadioButtonValidation" classname="scripts.TechGlobalRadioButtonsTest" time="0.913"/>
-  <testcase name="languageRadioButtons1" classname="scripts.TechGlobalRadioButtonsTest" time="0.873"/>
-  <testcase name="languageRadioButtons2" classname="scripts.TechGlobalRadioButtonsTest" time="1.157"/>
-  <testcase name="validateRedBox" classname="scripts.TechGlobalWaitsTest" time="35.882"/>
-  <testcase name="selectDeliveryOption" classname="scripts.TechGlobalDropdownsTest" time="0.172"/>
-  <testcase name="selectProductOption" classname="scripts.TechGlobalDropdownsTest" time="0.08"/>
-  <testcase name="selectColorOption" classname="scripts.TechGlobalDropdownsTest" time="0.086"/>
-  <testcase name="selectMacBookOption" classname="scripts.TechGlobalDropdownsTest" time="0.355"/>
-  <testcase name="validateTheAppleLink" classname="scripts.TechGlobalMultipleWindowsTest" time="1.955"/>
-  <testcase name="validateLinkURLs" classname="scripts.TechGlobalMultipleWindowsTest" time="8.325"/>
+  <testcase name="ValidateCheckboxes1" classname="scripts.TechGlobalCheckBoxTest" time="1.214"/>
+  <testcase name="ValidateCheckboxes2" classname="scripts.TechGlobalCheckBoxTest" time="1.111"/>
+  <testcase name="dynamicElementsTest" classname="scripts.TechGlobalDynamicElementsTest" time="0.899"/>
+  <testcase name="validateCorrectTextDisplayFooter" classname="scripts.TechGlobalFooterTest" time="0.15"/>
+  <testcase name="validateSocialLinksFooter" classname="scripts.TechGlobalFooterTest" time="0.289"/>
+  <testcase name="validateFrontendTestingURL" classname="scripts.TechGlobalFrontendTestingHomeTest" time="0.676"/>
+  <testcase name="validateTechGlobalHeaderDropdownOptions" classname="scripts.TechGlobalHeaderTest" time="0.648"/>
+  <testcase name="validateJavaExercisesCards" classname="scripts.TechGlobalJavaExercisesHomeTest" time="1.65"/>
+  <testcase name="javaRadioButtonValidation" classname="scripts.TechGlobalRadioButtonsTest" time="0.982"/>
+  <testcase name="languageRadioButtons1" classname="scripts.TechGlobalRadioButtonsTest" time="1.84"/>
+  <testcase name="languageRadioButtons2" classname="scripts.TechGlobalRadioButtonsTest" time="1.263"/>
+  <testcase name="validateBlueBox" classname="scripts.TechGlobalWaitsTest" time="35.939"/>
+  <testcase name="validateRedBox" classname="scripts.TechGlobalWaitsTest" time="10.866"/>
+  <testcase name="selectDeliveryOption" classname="scripts.TechGlobalDropdownsTest" time="0.253"/>
+  <testcase name="selectProductOption" classname="scripts.TechGlobalDropdownsTest" time="0.116"/>
+  <testcase name="selectColorOption" classname="scripts.TechGlobalDropdownsTest" time="0.103"/>
+  <testcase name="selectMacBookOption" classname="scripts.TechGlobalDropdownsTest" time="0.727"/>
+  <testcase name="validateTheAppleLink" classname="scripts.TechGlobalMultipleWindowsTest" time="2.044"/>
+  <testcase name="validateLinkURLs" classname="scripts.TechGlobalMultipleWindowsTest" time="7.269"/>
+  <testcase name="warningAlert" classname="scripts.TechGlobalAlertsTest" time="0.232"/>
+  <testcase name="confirmationAlert" classname="scripts.TechGlobalAlertsTest" time="0.351"/>
 </testsuite>

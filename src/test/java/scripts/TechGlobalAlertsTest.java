@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import pages.TechGlobalAlertsPage;
 import pages.TechGlobalFrontendTestingHomePage;
 import utilities.AlertHandler;
+import utilities.Waiter;
 
 public class TechGlobalAlertsTest extends TechGlobalBase{
 
@@ -81,4 +82,40 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
                 "You confirmed the alert by clicking OK.");
     }
 
+    /*
+    PROMPT ALERT
+    Go to https://techglobal-training.netlify.app/
+    Click on "Practices" dropdown in the header
+    Select the "Frontend Testing" option
+    Click on the "Alerts" card
+    Click on "Prompt alert" button
+    Validate the alert text equals "What would you like to say to TechGlobal?"
+    Click on "Cancel" button on the alert
+    Validate the result message equals "You rejected the alert by clicking Cancel."
+    Click on "Prompt alert" button again
+    Click on "OK" button on the alert
+    Validate the result message equals "You entered "" in the alert and clicked OK."
+    Click on "Prompt alert" button again
+    Enter "Hello" to alert input box
+    Click on "OK" button on the alert
+    Validate the result message equals "You entered "Hello" in the alert and clicked OK."
+     */
+    @Test(priority = 3, description = "Prompt alert")
+    public void promptAlert(){
+        techGlobalAlertsPage.clickOnPromptAlert();
+        Assert.assertEquals(AlertHandler.getAlertText(),
+                "What would you like to say to TechGlobal?");
+        AlertHandler.dismissAlert();
+        Assert.assertEquals(techGlobalAlertsPage.result.getText(),
+                "You rejected the alert by clicking Cancel.");
+        techGlobalAlertsPage.clickOnPromptAlert();
+        AlertHandler.acceptAlert();
+        Assert.assertEquals(techGlobalAlertsPage.result.getText(),
+                "You entered \"\" in the alert and clicked OK.");
+        techGlobalAlertsPage.clickOnPromptAlert();
+        AlertHandler.sendKeysToAlert("Hello");
+        AlertHandler.acceptAlert();
+        Assert.assertEquals(techGlobalAlertsPage.result.getText(),
+                "You entered \"Hello\" in the alert and clicked OK.");
+    }
 }

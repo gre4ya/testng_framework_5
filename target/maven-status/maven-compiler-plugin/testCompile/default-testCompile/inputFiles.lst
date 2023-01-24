@@ -5,13 +5,16 @@
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/DropdownHandler.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/ConfigReader.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalWaitsTest.java
+/Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalAlertsTest.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/Driver.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalRadioButtonsPage.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalWaitsPage.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/testng_knowledge/_03_Priority_and_Dependency.java
+/Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalAlertsPage.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalMultipleWindowsPage.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalHeaderTest.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/testng_knowledge/_04_TestDescription.java
+/Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/AlertHandler.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalLogoTest.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalCheckBoxPage.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/Waiter.java
