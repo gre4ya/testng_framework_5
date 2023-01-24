@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import pages.TechGlobalAlertsPage;
 import pages.TechGlobalFrontendTestingHomePage;
 import utilities.AlertHandler;
-import utilities.Waiter;
 
 public class TechGlobalAlertsTest extends TechGlobalBase{
 
@@ -31,7 +30,7 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
     Validate the result message equals "You accepted warning by clicking OK."
      */
     @Test(priority = 1, description = "Validate Warning alert")
-    public void warningAlert(){
+    public void warningAlertValidation(){
         techGlobalAlertsPage.clickOnAlert("Warning alert");
 
         // Switching to alert
@@ -63,7 +62,7 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
     Validate the result message equals "You confirmed the alert by clicking OK."
      */
     @Test(priority = 2, description = "Validate Confirmation alert")
-    public void confirmationAlert(){
+    public void confirmationAlertValidation(){
 
         techGlobalAlertsPage.clickOnAlert("Confirmation alert");
         Assert.assertEquals(AlertHandler.getAlertText(),
@@ -100,8 +99,9 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
     Click on "OK" button on the alert
     Validate the result message equals "You entered "Hello" in the alert and clicked OK."
      */
-    @Test(priority = 3, description = "Prompt alert")
-    public void promptAlert(){
+    @Test(priority = 3, description = "Validate Prompt alert")
+    public void promptAlertValidation(){
+        String testMassage = "";
         techGlobalAlertsPage.clickOnPromptAlert();
         Assert.assertEquals(AlertHandler.getAlertText(),
                 "What would you like to say to TechGlobal?");
@@ -113,9 +113,10 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
         Assert.assertEquals(techGlobalAlertsPage.result.getText(),
                 "You entered \"\" in the alert and clicked OK.");
         techGlobalAlertsPage.clickOnPromptAlert();
-        AlertHandler.sendKeysToAlert("Hello");
+        testMassage = "Hello";
+        AlertHandler.sendKeysToAlert(testMassage);
         AlertHandler.acceptAlert();
         Assert.assertEquals(techGlobalAlertsPage.result.getText(),
-                "You entered \"Hello\" in the alert and clicked OK.");
+                "You entered \"" + testMassage +  "\" in the alert and clicked OK.");
     }
 }

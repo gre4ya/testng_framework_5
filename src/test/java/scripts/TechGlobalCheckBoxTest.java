@@ -26,7 +26,7 @@ public class TechGlobalCheckBoxTest extends TechGlobalBase{
     */
 
     @Test(priority = 1, description = "Validate Checkboxes first group")
-    public void ValidateCheckboxes1(){
+    public void validateCheckboxes1(){
 
         techGlobalFrontendTestingHomePage.getFrontendTestingPage();
         techGlobalFrontendTestingHomePage.clickOnCard(6);
@@ -59,7 +59,7 @@ public class TechGlobalCheckBoxTest extends TechGlobalBase{
      */
 
     @Test(priority = 1, description = "Validate Checkboxes second group")
-    public void ValidateCheckboxes2(){
+    public void validateCheckboxes2(){
 
         techGlobalFrontendTestingHomePage.getFrontendTestingPage();
         techGlobalFrontendTestingHomePage.clickOnCard(6);
