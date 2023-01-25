@@ -1,7 +1,5 @@
 package testng_knowledge;
 
-import org.testng.annotations.*;
-
 public class _01_Annotations {
 /*
     @BeforeTest

@@ -4,8 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class _02_Assertions {
-/*
-    @Test
+
+    @Test(enabled = false)
     public void test1(){
         Assert.assertTrue(true);
         Assert.assertTrue(1 == 1);
@@ -14,26 +14,26 @@ public class _02_Assertions {
         Assert.assertTrue(3 + 5 <= 2 * 10);
     }
 
-    @Test
+    @Test(enabled = false)
     public void test2(){
         Assert.assertFalse(false);
         Assert.assertFalse(3 > 5);
     }
 
-    @Test
+    @Test(enabled = false)
     public void teat3(){
         Assert.assertEquals("hello", "hello");
         Assert.assertNotEquals("hello", "Hello");
     }
 
-    @Test
+    @Test(enabled = false)
     public void assertionMessages(){
         Assert.assertTrue(false, "This validation FAILED");
         Assert.assertEquals("Hello", "hello", "This two strings are not equal");
     }
-    @Test
+    @Test(enabled = false)
     public void testFail(){
         Assert.fail("This test fails due to BUG: 123ABC");
     }
- */
+
 }
