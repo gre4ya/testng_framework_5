@@ -25,11 +25,26 @@ public class _06_DataProvider {
 
         Driver.quitDriver();
     }
+    @Test(dataProvider = "credentials")
+    public void validateInvalidUsernameMessage(String username, String password, String message){
+        System.out.println("\n--------------------");
+        System.out.println("Username = " + username);
+        System.out.println("Password = " + password);
+        System.out.println("Message = " + message);
+    }
 
     @DataProvider
     public Object[] searchData(){
         return new Object[]{"Phone", "Spoon", "AirPods", "Mouse", "Pen"};
     }
 
-
+    @DataProvider
+    public Object[][] credentials(){
+        return new Object[][]{
+                {"","", "Invalid Username entered!"},
+                {"john", "Test1234", "Invalid Username entered!"},
+                {"john", "abcd", "Invalid Username entered!"},
+                {"TechGlobal", "abcd", "Invalid Password entered!"}
+        };
+    }
 }
