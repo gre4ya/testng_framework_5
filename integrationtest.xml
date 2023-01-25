@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Integration Test">
+    <test name="Integration test cases">
+        <groups>
+            <run>
+                <include name="Integration"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="testng_knowledge._07_Groups">
+                <methods>
+                    <include name="test2"/>
+                    <include name="test6"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

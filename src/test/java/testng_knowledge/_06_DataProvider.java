@@ -11,7 +11,7 @@ import utilities.Driver;
 
 public class _06_DataProvider {
 
-    @Test(dataProvider = "searchData")
+    @Test(dataProvider = "searchData", enabled = false)
     public void validateSearchResult(String data){
         WebDriver driver = Driver.getDriver();
         driver.get("https://www.google.com/");
@@ -25,7 +25,7 @@ public class _06_DataProvider {
 
         Driver.quitDriver();
     }
-    @Test(dataProvider = "credentials")
+    @Test(dataProvider = "credentials", enabled = false)
     public void validateInvalidUsernameMessage(String username, String password, String message){
         System.out.println("\n--------------------");
         System.out.println("Username = " + username);
