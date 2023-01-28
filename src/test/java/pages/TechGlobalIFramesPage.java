@@ -9,6 +9,14 @@ public class TechGlobalIFramesPage extends TechGlobalBasePage{
     public WebElement inputHeader;
     @FindBy(css = "#form_frame")
     public WebElement iFrame;
+    @FindBy(id = "first_name")
+    public WebElement firstNameInput;
+    @FindBy(id = "last_name")
+    public WebElement lastNameInput;
+    @FindBy(id = "submit")
+    public WebElement submitButton;
+    @FindBy(id = "result")
+    public WebElement result;
 
 
 }

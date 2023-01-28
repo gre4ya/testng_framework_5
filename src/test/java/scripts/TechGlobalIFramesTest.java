@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalFrontendTestingHomePage;
 import pages.TechGlobalIFramesPage;
+import utilities.Waiter;
 
 public class TechGlobalIFramesTest extends TechGlobalBase{
 
@@ -30,6 +31,27 @@ public class TechGlobalIFramesTest extends TechGlobalBase{
         Assert.assertTrue(techGlobalIFramesPage.inputHeader.isDisplayed());
         Assert.assertEquals(techGlobalIFramesPage.inputHeader.getText(),
                 "Please fill out your information below");
+    }
 
+    /**
+     TEST 2
+     Go to https://techglobal-training.netlify.app/
+     Click on “Practices” dropdown in the header
+     Select the “Frontend Testing” option
+     Click on the “IFrames” card
+     Enter “John” to first name input box
+     Enter “Doe” to last name input box
+     Click on “SUBMIT” button
+     Validate the result equals “You entered: John Doe”
+     */
+    @Test(priority = 2, description = "Validating result display")
+    public void validateResultDisplay(){
+        driver.switchTo().frame(techGlobalIFramesPage.iFrame);
+        techGlobalIFramesPage.firstNameInput.sendKeys("John");
+        techGlobalIFramesPage.lastNameInput.sendKeys("Doe");
+        techGlobalIFramesPage.submitButton.click();
+        driver.switchTo().parentFrame();
+        Assert.assertEquals(techGlobalIFramesPage.result.getText(),
+                "You entered: John Doe");
     }
 }
