@@ -9,6 +9,7 @@ public class TechGlobalFileUploadPage extends TechGlobalBasePage{
     public WebElement fileUploadInput;
     @FindBy(id = "file_submit")
     public WebElement uploadButton;
-
+    @FindBy(id = "result")
+    public WebElement result;
 
 }
