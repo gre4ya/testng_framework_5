@@ -10,4 +10,6 @@ public class TechGlobalStaticTablesPage extends TechGlobalBasePage{
 
     @FindBy(css = ".header")
     public List<WebElement> tableHeader;
+    @FindBy(xpath = "//tbody/tr[1]/td")
+    public List<WebElement> row1Elements;
 }
