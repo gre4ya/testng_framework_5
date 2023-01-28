@@ -8,7 +8,7 @@ import pages.TechGlobalDynamicElementsPage;
 import pages.TechGlobalFrontendTestingHomePage;
 
 public class TechGlobalDynamicElementsTest extends TechGlobalBase{
-    /*
+    /**
     TEST CASES
     Dynamic Elements
     Go to https://techglobal-training.netlify.app/

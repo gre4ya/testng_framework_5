@@ -7,22 +7,21 @@ import pages.TechGlobalFrontendTestingHomePage;
 import pages.TechGlobalRadioButtonsPage;
 
 public class TechGlobalRadioButtonsTest extends TechGlobalBase{
-    /*
-    Go to https://techglobal-training.netlify.app/
-    Click on "Practices" dropdown in the header
-    Select the "Frontend Testing" option
-    Click on the "Radio Buttons" card
-    Validate "Java", "JavaScript" and "C#" radio buttons are displayed, enabled and not selected
-    Select "Java" and validate it is selected but the other 2 are deselected
-    Select "JavaScript" validate it is selected but the other 2 are deselected
-     */
 
     @BeforeMethod
     public void setPage(){
         techGlobalFrontendTestingHomePage = new TechGlobalFrontendTestingHomePage();
         techGlobalRadioButtonsPage = new TechGlobalRadioButtonsPage();
     }
-
+    /**
+     Go to https://techglobal-training.netlify.app/
+     Click on "Practices" dropdown in the header
+     Select the "Frontend Testing" option
+     Click on the "Radio Buttons" card
+     Validate "Java", "JavaScript" and "C#" radio buttons are displayed, enabled and not selected
+     Select "Java" and validate it is selected but the other 2 are deselected
+     Select "JavaScript" validate it is selected but the other 2 are deselected
+     */
     @Test(priority = 1, description = "Validate Tech Global Language Radio Buttons (1)")
     public void languageRadioButtons1(){
         techGlobalFrontendTestingHomePage.getFrontendTestingPage();
@@ -53,7 +52,7 @@ public class TechGlobalRadioButtonsTest extends TechGlobalBase{
         Assert.assertFalse(techGlobalRadioButtonsPage.radioButtonsInput1.get(2).isSelected());
     }
 
-    /*
+    /**
     Go to https://techglobal-training.netlify.app/
     Click on "Practices" dropdown in the header
     Select the "Frontend Testing" option
@@ -62,7 +61,6 @@ public class TechGlobalRadioButtonsTest extends TechGlobalBase{
     Select "Cypress" and validate it is selected but the other 2 are deselected
     Select "Playwright" validate it is selected but the other 2 are deselected
      */
-
     @Test(priority = 2, description = "Validate Tech Global Language Radio Buttons (2)")
     public void languageRadioButtons2(){
         techGlobalFrontendTestingHomePage.getFrontendTestingPage();

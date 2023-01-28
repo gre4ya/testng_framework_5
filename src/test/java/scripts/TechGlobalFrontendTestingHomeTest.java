@@ -7,7 +7,7 @@ import pages.TechGlobalFrontendTestingHomePage;
 import utilities.Waiter;
 
 public class TechGlobalFrontendTestingHomeTest extends TechGlobalBase{
-    /*
+    /**
     TEST TASK
     Go to https://techglobal-training.netlify.app/
     Click on "Practices" dropdown
@@ -71,21 +71,16 @@ public class TechGlobalFrontendTestingHomeTest extends TechGlobalBase{
             Assert.assertEquals(techGlobalFrontendTestingHomePage.cards.get(i).getText(),cardText[i]);
         }
     }
-
-    /*
+    /**
     TEST TASK
     Go to https://techglobal-training.netlify.app/
     Click on "Practices" dropdown
     Click on "Frontend Testing" option
     Validate the url contains "frontend"
      */
-
     @Test(priority = 2, description = "Validate URL")
     public void validateFrontendTestingURL(){
         techGlobalFrontendTestingHomePage.getFrontendTestingPage();
         Assert.assertTrue(driver.getCurrentUrl().contains("frontend"));
     }
-
-
-
 }

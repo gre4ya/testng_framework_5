@@ -5,7 +5,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalCheckBoxPage;
 import pages.TechGlobalFrontendTestingHomePage;
-import utilities.Waiter;
 
 public class TechGlobalCheckBoxTest extends TechGlobalBase{
 
@@ -14,8 +13,7 @@ public class TechGlobalCheckBoxTest extends TechGlobalBase{
         techGlobalFrontendTestingHomePage = new TechGlobalFrontendTestingHomePage();
         techGlobalCheckBoxPage = new TechGlobalCheckBoxPage();
     }
-
-    /*
+    /**
     Go to https://techglobal-training.netlify.app/
     Click on "Practices" dropdown in the header
     Select the "Frontend Testing" option
@@ -24,7 +22,6 @@ public class TechGlobalCheckBoxTest extends TechGlobalBase{
     Select both and validate they are both selected
     Deselect both and validate they are deselected
     */
-
     @Test(priority = 1, description = "Validate Checkboxes first group")
     public void validateCheckboxes1(){
 
@@ -47,8 +44,7 @@ public class TechGlobalCheckBoxTest extends TechGlobalBase{
             Assert.assertFalse(techGlobalCheckBoxPage.checkBoxInput1.get(i).isSelected());
         }
     }
-
-    /*
+    /**
     Go to https://techglobal-training.netlify.app/
     Click on "Practices" dropdown in the header
     Select the "Frontend Testing" option
@@ -57,7 +53,6 @@ public class TechGlobalCheckBoxTest extends TechGlobalBase{
     Select both and validate they are both selected
     Deselect both and validate they are deselected (edited)
      */
-
     @Test(priority = 1, description = "Validate Checkboxes second group")
     public void validateCheckboxes2(){
 

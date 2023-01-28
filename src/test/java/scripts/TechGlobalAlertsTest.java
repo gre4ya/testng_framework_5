@@ -18,7 +18,7 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
         techGlobalFrontendTestingHomePage.clickOnCard("Alerts");
     }
 
-    /*
+    /**
     WARNING ALERT
     Go to https://techglobal-training.netlify.app/
     Click on "Practices" dropdown in the header
@@ -47,7 +47,7 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
         Assert.assertEquals(techGlobalAlertsPage.result.getText(),
                 "You accepted warning by clicking OK.");
     }
-    /*
+    /**
     CONFIRMATION ALERT
     Go to https://techglobal-training.netlify.app/
     Click on "Practices" dropdown in the header
@@ -80,8 +80,7 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
         Assert.assertEquals(techGlobalAlertsPage.result.getText(),
                 "You confirmed the alert by clicking OK.");
     }
-
-    /*
+    /**
     PROMPT ALERT
     Go to https://techglobal-training.netlify.app/
     Click on "Practices" dropdown in the header

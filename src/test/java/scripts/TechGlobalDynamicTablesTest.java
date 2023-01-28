@@ -15,7 +15,7 @@ public class TechGlobalDynamicTablesTest extends TechGlobalBase{
         techGlobalFrontendTestingHomePage.getFrontendTestingPage();
         techGlobalFrontendTestingHomePage.clickOnCard("Dynamic Tables");
     }
-    /*
+    /**
     REGULAR MODAL AUTOMATION (this is not a JS alert)
     Go to https://techglobal-training.netlify.app/
     Click on "Practices" dropdown in the header

@@ -5,7 +5,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalFrontendTestingHomePage;
 import pages.TechGlobalIFramesPage;
-import utilities.Waiter;
 
 public class TechGlobalIFramesTest extends TechGlobalBase{
 
@@ -16,7 +15,6 @@ public class TechGlobalIFramesTest extends TechGlobalBase{
         techGlobalFrontendTestingHomePage.getFrontendTestingPage();
         techGlobalFrontendTestingHomePage.clickOnCard("IFrames");
     }
-
     /**
     TEST 1
     Go to https://techglobal-training.netlify.app/
@@ -32,7 +30,6 @@ public class TechGlobalIFramesTest extends TechGlobalBase{
         Assert.assertEquals(techGlobalIFramesPage.inputHeader.getText(),
                 "Please fill out your information below");
     }
-
     /**
      TEST 2
      Go to https://techglobal-training.netlify.app/

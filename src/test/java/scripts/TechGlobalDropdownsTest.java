@@ -35,7 +35,7 @@ public class TechGlobalDropdownsTest extends TechGlobalBase{
         //new Select(techGlobalDropdownsPage.colorDropdown).selectByVisibleText("Yellow");
         DropdownHandler.selectByIndex(techGlobalDropdownsPage.colorDropdown, 1);
     }
-    /*
+    /**
     Go to TechGlobal Training app
     Select Frontend Testing from Practices Dropdown
     Select Dropdowns card
@@ -53,9 +53,7 @@ public class TechGlobalDropdownsTest extends TechGlobalBase{
                                           techGlobalDropdownsPage.deliveryDropdownOptions,
                                           "Delivery");
     techGlobalDropdownsPage.submitButton.click();
-    Assert.assertEquals(techGlobalDropdownsPage.resultMessage.getText(), "Your Silver MacBook Pro 13 will be delivered to you.");
+    Assert.assertEquals(techGlobalDropdownsPage.resultMessage.getText(),
+            "Your Silver MacBook Pro 13 will be delivered to you.");
     }
-
-
-
 }
