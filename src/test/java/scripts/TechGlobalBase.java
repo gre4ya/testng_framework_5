@@ -24,6 +24,7 @@ public class TechGlobalBase {
     TechGlobalDynamicTablesPage techGlobalDynamicTablesPage;
     TechGlobalIFramesPage techGlobalIFramesPage;
     TechGlobalFileUploadPage techGlobalFileUploadPage;
+    TechGlobalFileDownloadPage techGlobalFileDownloadPage;
     @BeforeMethod
     public void setup(){
         driver = Driver.getDriver();

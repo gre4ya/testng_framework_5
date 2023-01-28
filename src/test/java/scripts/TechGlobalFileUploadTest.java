@@ -24,16 +24,14 @@ public class TechGlobalFileUploadTest extends TechGlobalBase{
      Click on “UPLOAD” button
      Validate the result message equals “You Uploaded ‘hello.txt’”
      */
-
     @Test(priority = 1, description = "Validate file upload")
     public void validateFileUpload(){
         String filePath = "/Users/gre4ya/IdeaProjects/testng_framework_5/hello.txt";
+
         techGlobalFileUploadPage.fileUploadInput.sendKeys(filePath);
         techGlobalFileUploadPage.uploadButton.click();
 
         Assert.assertEquals(techGlobalFileUploadPage.result.getText(),
                 "You Uploaded '" + filePath.substring(filePath.lastIndexOf('/') + 1) + "'");
     }
-
-
 }
