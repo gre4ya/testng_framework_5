@@ -23,6 +23,7 @@ public class TechGlobalBase {
     TechGlobalAlertsPage techGlobalAlertsPage;
     TechGlobalDynamicTablesPage techGlobalDynamicTablesPage;
     TechGlobalIFramesPage techGlobalIFramesPage;
+    TechGlobalFileUploadPage techGlobalFileUploadPage;
     @BeforeMethod
     public void setup(){
         driver = Driver.getDriver();

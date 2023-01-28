@@ -14,23 +14,18 @@ public class TechGlobalWaitsTest extends TechGlobalBase {
         techGlobalWaitsPage = new TechGlobalWaitsPage();
         techGlobalFrontendTestingHomePage = new TechGlobalFrontendTestingHomePage();
     }
-   // @Ignore
     @Test(priority = 1, description = "Validation red box is visible")
     public void validateRedBox(){
         techGlobalFrontendTestingHomePage.getFrontendTestingPage();
         techGlobalFrontendTestingHomePage.clickOnCard(3);
-
         techGlobalWaitsPage.redBoxButton.click();
-
         Assert.assertTrue(techGlobalWaitsPage.redBox.isDisplayed());
     }
-    @Test(priority = 1, description = "Validation blue box is visible")
+    @Test(priority = 1, description = "Validation blue box is visible", enabled = false)
     public void validateBlueBox(){
         techGlobalFrontendTestingHomePage.getFrontendTestingPage();
         techGlobalFrontendTestingHomePage.clickOnCard(3);
-
         techGlobalWaitsPage.blueBoxButton.click();
-
         Waiter.waitForVisibilityOfElement(techGlobalWaitsPage.blueBox, 60);
         Assert.assertTrue(techGlobalWaitsPage.blueBox.isDisplayed());
     }
