@@ -18,7 +18,6 @@ public class TechGlobalFooterTest extends TechGlobalBase{
             Assert.assertEquals(techGlobalBasePage.footerParagraphs.get(i).getText(), footerTextExpected[i]);
         }
     }
-
     @Test
     public void validateSocialLinksFooter(){
         for (int i = 0; i < 2; i++) {

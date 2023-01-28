@@ -3,35 +3,27 @@
 <suite name="Regression">
     <test name="All Functionalities">
         <classes>
-            <class name="scripts.TechGlobalCheckBoxTest">
-                <methods>
-                    <include name="ValidateCheckboxes1"/>
-                    <include name="ValidateCheckboxes2"/>
-                </methods>
-            </class>
+
             <class name="scripts.TechGlobalDynamicElementsTest">
                 <methods>
                     <include name="dynamicElementsTest"/>
                 </methods>
             </class>
-            <class name="scripts.TechGlobalFooterTest">
-                <methods>
-                    <include name="validateCorrectTextDisplayFooter"/>
-                    <include name="validateSocialLinksFooter"/>
-                </methods>
-            </class>
+
             <class name="scripts.TechGlobalFrontendTestingHomeTest">
                 <methods>
                     <exclude name="validateFrontendTestingCards"/>
                     <include name="validateFrontendTestingURL"/>
                 </methods>
             </class>
+
             <class name="scripts.TechGlobalHeaderTest">
                 <methods>
                     <exclude name="validateTechGlobalHeaderDropdown"/>
                     <include name="validateTechGlobalHeaderDropdownOptions"/>
                 </methods>
             </class>
+
             <class name="scripts.TechGlobalJavaExercisesHomeTest">
                 <methods>
                     <include name="validateJavaExercisesCards"/>
@@ -45,10 +37,14 @@
                     <include name="languageRadioButtons2"/>
                 </methods>
             </class>
+
+            <class name="scripts.TechGlobalCheckBoxTest"/>
+            <class name="scripts.TechGlobalFooterTest"/>
             <class name="scripts.TechGlobalWaitsTest"/>
             <class name="scripts.TechGlobalDropdownsTest"/>
             <class name="scripts.TechGlobalMultipleWindowsTest"/>
             <class name="scripts.TechGlobalAlertsTest"/>
+            <class name="scripts.TechGlobalIFramesTest"/>
         </classes>
     </test>
 </suite>

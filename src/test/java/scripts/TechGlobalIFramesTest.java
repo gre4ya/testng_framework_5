@@ -1,10 +1,13 @@
 package scripts;
 
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalFrontendTestingHomePage;
 import pages.TechGlobalIFramesPage;
+
+import java.util.stream.IntStream;
 
 public class TechGlobalIFramesTest extends TechGlobalBase{
 
@@ -44,11 +47,12 @@ public class TechGlobalIFramesTest extends TechGlobalBase{
     @Test(priority = 2, description = "Validating result display")
     public void validateResultDisplay(){
         driver.switchTo().frame(techGlobalIFramesPage.iFrame);
-        techGlobalIFramesPage.firstNameInput.sendKeys("John");
-        techGlobalIFramesPage.lastNameInput.sendKeys("Doe");
+        String[] credentials = {"John", "Doe"};
+        // for (int i = 0; i < credentials.length; i++) {techGlobalIFramesPage.input.get(i).sendKeys(credentials[i]);}
+        IntStream.range(0, credentials.length).forEach(i -> techGlobalIFramesPage.input.get(i).sendKeys(credentials[i]));
         techGlobalIFramesPage.submitButton.click();
-        driver.switchTo().parentFrame();
+        driver.switchTo().parentFrame(); // driver.switchTo().defaultContent();
         Assert.assertEquals(techGlobalIFramesPage.result.getText(),
-                "You entered: John Doe");
+                "You entered: " + credentials[0] + " " + credentials[1]);
     }
 }
