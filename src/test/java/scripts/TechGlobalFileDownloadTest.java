@@ -24,7 +24,7 @@ public class TechGlobalFileDownloadTest extends TechGlobalBase{
      Click on the “TechGlobal School.pptx” file
      MANUALLY TEST that the file is downloaded in your Downloads file
      */
-    @Test(priority = 1, description = "Validate file dowload")
+    @Test(priority = 1, description = "Validate file download")
     public void validateFileDownload(){
         techGlobalFileDownloadPage.downloadLink.click();
         Waiter.pause(2);
