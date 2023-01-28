@@ -22,6 +22,7 @@ public class TechGlobalBase {
     TechGlobalMultipleWindowsPage techGlobalMultipleWindowsPage;
     TechGlobalAlertsPage techGlobalAlertsPage;
     TechGlobalDynamicTablesPage techGlobalDynamicTablesPage;
+    TechGlobalIFramesPage techGlobalIFramesPage;
     @BeforeMethod
     public void setup(){
         driver = Driver.getDriver();
