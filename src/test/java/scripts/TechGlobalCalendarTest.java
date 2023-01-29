@@ -36,9 +36,7 @@ public class TechGlobalCalendarTest extends TechGlobalBase{
     public void validateDatePicker(){
         techGlobalCalendarPage.calendarButton.click();
 
-        int year = 2024;
-        int month = 5;
-        int day = 16;
+        int year = 2024, month = 5, day = 16;
 
         String monthString = Month.of(month).toString().charAt(0) + Month.of(month).toString().substring(1).toLowerCase();
 
@@ -48,6 +46,7 @@ public class TechGlobalCalendarTest extends TechGlobalBase{
         LocalDate selectedDate = LocalDate.of(year, month, day);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE MMM dd yyyy");
         String expectedDate = selectedDate.format(formatter);
+
         Assert.assertEquals(techGlobalCalendarPage.result.getText(),
                 "You have selected " + expectedDate + ".");
     }
