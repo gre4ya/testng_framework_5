@@ -5,7 +5,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalCalendarPage;
 import pages.TechGlobalFrontendTestingHomePage;
-import utilities.Waiter;
+
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.format.DateTimeFormatter;
 
 public class TechGlobalCalendarTest extends TechGlobalBase{
 
@@ -32,14 +35,21 @@ public class TechGlobalCalendarTest extends TechGlobalBase{
     @Test(priority = 1, description = "Validate Date Picker")
     public void validateDatePicker(){
         techGlobalCalendarPage.calendarButton.click();
-        techGlobalCalendarPage.navigateToYearAndMonth(2024, "May");
-        techGlobalCalendarPage.clickOnDate(16);
+
+        int year = 2024;
+        int month = 5;
+        int day = 16;
+
+        String monthString = Month.of(month).toString().charAt(0) + Month.of(month).toString().substring(1).toLowerCase();
+
+        techGlobalCalendarPage.navigateToYearAndMonth(year, monthString);
+        techGlobalCalendarPage.clickOnDate(day);
+
+        LocalDate selectedDate = LocalDate.of(year, month, day);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE MMM dd yyyy");
+        String expectedDate = selectedDate.format(formatter);
         Assert.assertEquals(techGlobalCalendarPage.result.getText(),
-                "You have selected Thu May 16 2024.");
-
-
+                "You have selected " + expectedDate + ".");
     }
-
-
 
 }
