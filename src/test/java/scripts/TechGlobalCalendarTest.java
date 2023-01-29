@@ -1,9 +1,11 @@
 package scripts;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalCalendarPage;
 import pages.TechGlobalFrontendTestingHomePage;
+import utilities.Waiter;
 
 public class TechGlobalCalendarTest extends TechGlobalBase{
 
@@ -30,7 +32,10 @@ public class TechGlobalCalendarTest extends TechGlobalBase{
     @Test(priority = 1, description = "Validate Date Picker")
     public void validateDatePicker(){
         techGlobalCalendarPage.calendarButton.click();
-
+        techGlobalCalendarPage.navigateToYearAndMonth(2024, "May");
+        techGlobalCalendarPage.clickOnDate(16);
+        Assert.assertEquals(techGlobalCalendarPage.result.getText(),
+                "You have selected Thu May 16 2024.");
 
 
     }
