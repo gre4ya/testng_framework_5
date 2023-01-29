@@ -1,12 +1,15 @@
 package scripts;
 
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalDynamicTablesPage;
 import pages.TechGlobalFrontendTestingHomePage;
 import utilities.TableData;
+import utilities.TextHandler;
 
+import java.util.List;
 import java.util.stream.IntStream;
 
 public class TechGlobalDynamicTablesTest extends TechGlobalBase{
@@ -51,7 +54,7 @@ public class TechGlobalDynamicTablesTest extends TechGlobalBase{
      */
     @Test(priority = 1, description = "Validate Dynamic Table")
     public void validateDynamicTable(){
-        int initialTotal = Integer.parseInt(techGlobalDynamicTablesPage.totalAmount.getText().replaceAll("[^0-9]", ""));
+        int initialTotal = TextHandler.getInt(techGlobalDynamicTablesPage.totalAmount.getText());
         techGlobalDynamicTablesPage.addProductButton.click();
         Assert.assertEquals(techGlobalDynamicTablesPage.modalCardTitle.getText(), "Add New Product");
         String[] products = {"2", "Apple Watch", "500"};
@@ -64,9 +67,18 @@ public class TechGlobalDynamicTablesTest extends TechGlobalBase{
 
         Assert.assertEquals(techGlobalDynamicTablesPage.tableRows.size(), initialTableSize + 1);
 
-        int productTotal = Integer.parseInt(TableData.getTableRow(driver, 4).get(3).getText().replaceAll("[^0-9]", ""));
+        int productTotal = TextHandler.getInt(TableData.getTableRow(driver, 4).get(3).getText());
 
+        List<WebElement> tableRow = TableData.getTableRow(driver, 4);
 
+        IntStream.range(0, tableRow.size() - 1).forEach(i -> Assert.assertEquals(tableRow.get(i).getText(), products[i]));
+        Assert.assertEquals(productTotal, myProductTotal);
+
+        int newTotal = TextHandler.getInt(techGlobalDynamicTablesPage.totalAmount.getText());
+
+        int expectedTotal = initialTotal + productTotal;
+
+        Assert.assertEquals(newTotal, expectedTotal);
 
     }
 
