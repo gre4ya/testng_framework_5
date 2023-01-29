@@ -26,6 +26,7 @@ public class TechGlobalBase {
     TechGlobalFileUploadPage techGlobalFileUploadPage;
     TechGlobalFileDownloadPage techGlobalFileDownloadPage;
     TechGlobalStaticTablesPage techGlobalStaticTablesPage;
+    TechGlobalCalendarPage techGlobalCalendarPage;
     @BeforeMethod
     public void setup(){
         driver = Driver.getDriver();
