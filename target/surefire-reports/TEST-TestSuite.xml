@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="158.326" tests="24" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="151.701" tests="28" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home/jre/lib"/>
@@ -63,28 +63,32 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="dynamicElementsTest" classname="scripts.TechGlobalDynamicElementsTest" time="0.965"/>
-  <testcase name="validateFrontendTestingURL" classname="scripts.TechGlobalFrontendTestingHomeTest" time="0.708"/>
-  <testcase name="validateTechGlobalHeaderDropdownOptions" classname="scripts.TechGlobalHeaderTest" time="0.327"/>
-  <testcase name="validateJavaExercisesCards" classname="scripts.TechGlobalJavaExercisesHomeTest" time="1.765"/>
-  <testcase name="javaRadioButtonValidation" classname="scripts.TechGlobalRadioButtonsTest" time="1.04"/>
-  <testcase name="languageRadioButtons1" classname="scripts.TechGlobalRadioButtonsTest" time="1.083"/>
-  <testcase name="languageRadioButtons2" classname="scripts.TechGlobalRadioButtonsTest" time="1.18"/>
-  <testcase name="validateCheckboxes1" classname="scripts.TechGlobalCheckBoxTest" time="1.179"/>
-  <testcase name="validateCheckboxes2" classname="scripts.TechGlobalCheckBoxTest" time="1.01"/>
-  <testcase name="validateCorrectTextDisplayFooter" classname="scripts.TechGlobalFooterTest" time="0.104"/>
-  <testcase name="validateSocialLinksFooter" classname="scripts.TechGlobalFooterTest" time="0.167"/>
-  <testcase name="validateBlueBox" classname="scripts.TechGlobalWaitsTest" time="36.139"/>
-  <testcase name="validateRedBox" classname="scripts.TechGlobalWaitsTest" time="10.796"/>
-  <testcase name="selectDeliveryOption" classname="scripts.TechGlobalDropdownsTest" time="0.186"/>
-  <testcase name="selectProductOption" classname="scripts.TechGlobalDropdownsTest" time="0.107"/>
-  <testcase name="selectColorOption" classname="scripts.TechGlobalDropdownsTest" time="0.098"/>
-  <testcase name="selectMacBookOption" classname="scripts.TechGlobalDropdownsTest" time="0.372"/>
-  <testcase name="validateTheAppleLink" classname="scripts.TechGlobalMultipleWindowsTest" time="1.929"/>
-  <testcase name="validateLinkURLs" classname="scripts.TechGlobalMultipleWindowsTest" time="5.981"/>
-  <testcase name="warningAlertValidation" classname="scripts.TechGlobalAlertsTest" time="0.143"/>
-  <testcase name="confirmationAlertValidation" classname="scripts.TechGlobalAlertsTest" time="0.221"/>
-  <testcase name="promptAlertValidation" classname="scripts.TechGlobalAlertsTest" time="0.359"/>
-  <testcase name="validateInputText" classname="scripts.TechGlobalIFramesTest" time="0.221"/>
-  <testcase name="validateResultDisplay" classname="scripts.TechGlobalIFramesTest" time="0.478"/>
+  <testcase name="dynamicElementsTest" classname="scripts.TechGlobalDynamicElementsTest" time="0.974"/>
+  <testcase name="validateFrontendTestingURL" classname="scripts.TechGlobalFrontendTestingHomeTest" time="0.587"/>
+  <testcase name="validateTechGlobalHeaderDropdownOptions" classname="scripts.TechGlobalHeaderTest" time="0.346"/>
+  <testcase name="validateJavaExercisesCards" classname="scripts.TechGlobalJavaExercisesHomeTest" time="1.904"/>
+  <testcase name="javaRadioButtonValidation" classname="scripts.TechGlobalRadioButtonsTest" time="0.98"/>
+  <testcase name="languageRadioButtons1" classname="scripts.TechGlobalRadioButtonsTest" time="1.003"/>
+  <testcase name="languageRadioButtons2" classname="scripts.TechGlobalRadioButtonsTest" time="1.097"/>
+  <testcase name="validateCheckboxes1" classname="scripts.TechGlobalCheckBoxTest" time="1.063"/>
+  <testcase name="validateCheckboxes2" classname="scripts.TechGlobalCheckBoxTest" time="1.05"/>
+  <testcase name="validateCorrectTextDisplayFooter" classname="scripts.TechGlobalFooterTest" time="0.13"/>
+  <testcase name="validateSocialLinksFooter" classname="scripts.TechGlobalFooterTest" time="0.147"/>
+  <testcase name="validateRedBox" classname="scripts.TechGlobalWaitsTest" time="10.917"/>
+  <testcase name="selectDeliveryOption" classname="scripts.TechGlobalDropdownsTest" time="0.172"/>
+  <testcase name="selectProductOption" classname="scripts.TechGlobalDropdownsTest" time="0.132"/>
+  <testcase name="selectColorOption" classname="scripts.TechGlobalDropdownsTest" time="0.093"/>
+  <testcase name="selectMacBookOption" classname="scripts.TechGlobalDropdownsTest" time="0.472"/>
+  <testcase name="validateTheAppleLink" classname="scripts.TechGlobalMultipleWindowsTest" time="4.372"/>
+  <testcase name="validateLinkURLs" classname="scripts.TechGlobalMultipleWindowsTest" time="8.715"/>
+  <testcase name="warningAlertValidation" classname="scripts.TechGlobalAlertsTest" time="0.169"/>
+  <testcase name="confirmationAlertValidation" classname="scripts.TechGlobalAlertsTest" time="0.239"/>
+  <testcase name="promptAlertValidation" classname="scripts.TechGlobalAlertsTest" time="0.357"/>
+  <testcase name="validateInputText" classname="scripts.TechGlobalIFramesTest" time="0.207"/>
+  <testcase name="validateResultDisplay" classname="scripts.TechGlobalIFramesTest" time="0.541"/>
+  <testcase name="validateStaticTablesHeader" classname="scripts.TechGlobalStaticTablesTest" time="0.08"/>
+  <testcase name="validateStaticTablesRow1" classname="scripts.TechGlobalStaticTablesTest" time="0.058"/>
+  <testcase name="validateStaticTableColumn4" classname="scripts.TechGlobalStaticTablesTest" time="0.063"/>
+  <testcase name="validateFileUpload" classname="scripts.TechGlobalFileUploadTest" time="0.157"/>
+  <testcase name="validateFileDownload" classname="scripts.TechGlobalFileDownloadTest" time="2.05"/>
 </testsuite>

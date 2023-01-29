@@ -7,6 +7,8 @@ import pages.TechGlobalDropdownsPage;
 import pages.TechGlobalFrontendTestingHomePage;
 import utilities.DropdownHandler;
 
+import java.util.stream.IntStream;
+
 public class TechGlobalDropdownsTest extends TechGlobalBase{
     @BeforeMethod
     public void setPage(){
@@ -55,5 +57,5 @@ public class TechGlobalDropdownsTest extends TechGlobalBase{
     techGlobalDropdownsPage.submitButton.click();
     Assert.assertEquals(techGlobalDropdownsPage.resultMessage.getText(),
             "Your Silver MacBook Pro 13 will be delivered to you.");
-    }
+  }
 }

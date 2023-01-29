@@ -64,7 +64,20 @@ public class TechGlobalStaticTablesTest extends TechGlobalBase{
     public void validateStaticTableColumn4(){
         String[] column4Expected = {"USA", "China", "USA", "USA", "S. Korea"};
         List<WebElement> column4Actual = TableData.getTableColumn(driver, 4);
-        IntStream.range(0, column4Actual.size()).forEach(i ->
-                Assert.assertEquals(column4Actual.get(i).getText(), column4Expected[i]));
+        IntStream.range(0, column4Actual.size()).forEach(i -> {
+            System.out.println(column4Actual.get(i).getText());
+            Assert.assertEquals(column4Actual.get(i).getText(), column4Expected[i]);
+        });
+    }
+    @Test(priority = 4, description = "Validate all cells")
+    public void validateAllCells(){
+        List<List<WebElement>> tableData = techGlobalStaticTablesPage.getTaleData();
+
+        for (int i = 0; i < tableData.size(); i++) {
+            for (int j = 0; j < tableData.get(i).size(); j++) {
+                System.out.print(tableData.get(i).get(j).getText() + " | ");
+            }
+            System.out.println();
+        }
     }
 }

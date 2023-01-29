@@ -45,6 +45,9 @@
             <class name="scripts.TechGlobalMultipleWindowsTest"/>
             <class name="scripts.TechGlobalAlertsTest"/>
             <class name="scripts.TechGlobalIFramesTest"/>
+            <class name="scripts.TechGlobalStaticTablesTest"/>
+            <class name="scripts.TechGlobalFileUploadTest"/>
+            <class name="scripts.TechGlobalFileDownloadTest"/>
         </classes>
     </test>
 </suite>
