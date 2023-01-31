@@ -10,8 +10,6 @@ import utilities.TableData;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.TreeSet;
-import java.util.stream.IntStream;
 
 public class TechGlobalSortableTablesTest extends TechGlobalBase{
 
@@ -32,7 +30,7 @@ public class TechGlobalSortableTablesTest extends TechGlobalBase{
      Verify that the Quantity column of the table is sorted in ascending order
      */
 
-    @Test(priority = 1, description = "Sort table by acs and valoidate it is sorted bt quantity")
+    @Test(priority = 1, description = "Sort table by acs and validate it is sorted bt quantity")
     public void validateSortAcsByQuantity(){
         techGlobalSortableTablesPage.ascByQuantity.click();
         List<WebElement> column1Elements = TableData.getTableColumn(driver, 1);
@@ -43,7 +41,48 @@ public class TechGlobalSortableTablesTest extends TechGlobalBase{
         for (int i = 1; i < column1IntegerValues.size(); i++) {
             Assert.assertTrue(column1IntegerValues.get(i) >= column1IntegerValues.get(i - 1));
         }
-
-
     }
+    /**
+     TEST2
+     Go to https://techglobal-training.netlify.app/
+     Click on "Practices" dropdown in the header
+     Select the "Frontend Testing" option
+     Click on the "Sortable Tables" card
+     Click on the Quantity sort button to toggle descending order
+     Verify that the Quantity column of the table is sorted in descending order
+     */
+    @Test(priority = 1, description = "Sort table by desc and validate it is sorted bt quantity")
+    public void validateSortDescByQuantity() {
+        techGlobalSortableTablesPage.descByQuantity.click();
+        List<WebElement> column2Elements = TableData.getTableColumn(driver, 1);
+        ArrayList<Integer> column2IntegerValues = new ArrayList<>();
+        for (WebElement element : column2Elements) {
+            column2IntegerValues.add(Integer.parseInt(element.getText()));
+        }
+        for (int i = 0; i < column2IntegerValues.size() - 1; i++) {
+            Assert.assertTrue(column2IntegerValues.get(i) >= column2IntegerValues.get(i + 1));
+        }
+    }
+
+
+    /**
+     TEST3
+     Go to https://techglobal-training.netlify.app/
+     Click on "Practices" dropdown in the header
+     Select the "Frontend Testing" option
+     Click on the "Sortable Tables" card
+     Click on the Price sort button to toggle Ascending Order
+     Verify that the Price column of the table is sorted in ascending order
+     */
+
+
+    /**
+     TEST4
+     Go to https://techglobal-training.netlify.app/
+     Click on "Practices" dropdown in the header
+     Select the "Frontend Testing" option
+     Click on the "Sortable Tables" card
+     Click on the Price sort button to toggle descending order
+     Verify that the Price column of the table is sorted in descending order
+     */
 }

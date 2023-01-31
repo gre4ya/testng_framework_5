@@ -9,7 +9,7 @@ public class TechGlobalIFramesPage extends TechGlobalBasePage{
     public TechGlobalIFramesPage(){super();}
     @FindBy(css = "#name_form > p")
     public WebElement inputHeader;
-    @FindBy(css = "#form_frame")
+    @FindBy(id = "form_frame")
     public WebElement iFrame;
     @FindBy(tagName = "input")
     public List<WebElement> input;

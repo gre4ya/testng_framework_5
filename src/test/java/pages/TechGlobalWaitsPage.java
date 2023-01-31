@@ -12,15 +12,11 @@ public class TechGlobalWaitsPage extends TechGlobalBasePage{
 
     @FindBy(css = "button[id='red']")
     public WebElement redBoxButton;
-
     @FindBy(css = "button[id='blue']")
     public WebElement blueBoxButton;
-
     @FindBy(css = "button[class*='red_box']")
     public WebElement redBox;
-
     @FindBy(css = "button[class*='blue_box']")
     public WebElement blueBox;
-
 
 }

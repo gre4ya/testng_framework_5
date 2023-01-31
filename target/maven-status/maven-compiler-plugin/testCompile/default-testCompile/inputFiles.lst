@@ -1,4 +1,5 @@
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/TableData.java
+/Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalCalendarPage.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalFooterTest.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/DropdownHandler.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/ConfigReader.java
@@ -13,7 +14,9 @@
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalLogoTest.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/junit_knowlege/_01_Annotations.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalCheckBoxPage.java
+/Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/TextHandler.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalStaticTablesPage.java
+/Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalSortableTablesTest.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/WindowHandler.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalFrontendTestingHomeTest.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalDynamicElementsTest.java
@@ -26,8 +29,10 @@
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/testng_knowledge/_10_Parameterization.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/testng_knowledge/_02_Assertions.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalMultipleWindowsTest.java
+/Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalSortableTablesPage.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalBasePage.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/testng_knowledge/_06_DataProvider.java
+/Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalCalendarTest.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalAlertsTest.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/Driver.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalRadioButtonsPage.java

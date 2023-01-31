@@ -1,6 +1,7 @@
 testng_knowledge/_04_TestDescription.class
 utilities/DropdownHandler.class
 junit_knowlege/_01_Annotations.class
+scripts/TechGlobalSortableTablesTest.class
 pages/TechGlobalFrontendTestingHomePage.class
 pages/TechGlobalCheckBoxPage.class
 scripts/TechGlobalCheckBoxTest.class
@@ -13,8 +14,10 @@ testng_knowledge/_10_Parameterization.class
 scripts/TechGlobalJavaExercisesHomeTest.class
 utilities/TableData.class
 testng_knowledge/_03_Priority_and_Dependency.class
+pages/TechGlobalSortableTablesPage.class
 pages/TechGlobalFileUploadPage.class
 scripts/TechGlobalDynamicTablesTest.class
+utilities/TextHandler.class
 utilities/WindowHandler.class
 scripts/TechGlobalAlertsTest.class
 scripts/TechGlobalHeaderTest.class
@@ -22,6 +25,7 @@ pages/TechGlobalFileDownloadPage.class
 pages/TechGlobalDynamicTablesPage.class
 scripts/TechGlobalWaitsTest.class
 scripts/TechGlobalDropdownsTest.class
+pages/TechGlobalCalendarPage.class
 testng_knowledge/_06_DataProvider.class
 pages/TechGlobalBasePage.class
 utilities/Waiter.class
@@ -46,6 +50,7 @@ utilities/Driver.class
 pages/TechGlobalDropdownsPage.class
 testng_knowledge/_08_Parallel_Test.class
 pages/TechGlobalRadioButtonsPage.class
+scripts/TechGlobalCalendarTest.class
 scripts/TechGlobalLogoTest.class
 pages/TechGlobalStaticTablesPage.class
 scripts/TechGlobalMultipleWindowsTest.class
