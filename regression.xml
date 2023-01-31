@@ -45,9 +45,10 @@
             <class name="scripts.TechGlobalAlertsTest"/>
             <class name="scripts.TechGlobalIFramesTest"/>
             <class name="scripts.TechGlobalStaticTablesTest"/>
+            <class name="scripts.TechGlobalDynamicTablesTest"/>
+            <class name="scripts.TechGlobalSortableTablesTest"/>
             <class name="scripts.TechGlobalFileUploadTest"/>
             <class name="scripts.TechGlobalFileDownloadTest"/>
-            <class name="scripts.TechGlobalSortableTablesTest"/>
             <class name="scripts.TechGlobalCalendarTest"/>
         </classes>
     </test>

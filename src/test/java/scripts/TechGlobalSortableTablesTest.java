@@ -37,7 +37,6 @@ public class TechGlobalSortableTablesTest extends TechGlobalBase{
      Click on the Quantity sort button to toggle Ascending Order
      Verify that the Quantity column of the table is sorted in ascending order
      */
-
     @Test(priority = 1, description = "Sort table by acs and validate it is sorted bt quantity")
     public void validateSortAcsByQuantity(){
         techGlobalSortableTablesPage.ascByQuantity.click();
