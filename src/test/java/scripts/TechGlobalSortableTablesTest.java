@@ -20,6 +20,14 @@ public class TechGlobalSortableTablesTest extends TechGlobalBase{
         techGlobalFrontendTestingHomePage.getFrontendTestingPage();
         techGlobalFrontendTestingHomePage.clickOnCard("Sortable Tables");
     }
+    public ArrayList<Integer> addTableDataToList(int columnNumber){
+        List<WebElement> columnElements = TableData.getTableColumn(driver, columnNumber);
+        ArrayList<Integer> columnIntegerValues = new ArrayList<>();
+        for (WebElement element : columnElements) {
+            columnIntegerValues.add(Integer.parseInt(element.getText()));
+        }
+        return columnIntegerValues;
+    }
     /**
      TEST1
      Go to https://techglobal-training.netlify.app/
@@ -33,13 +41,10 @@ public class TechGlobalSortableTablesTest extends TechGlobalBase{
     @Test(priority = 1, description = "Sort table by acs and validate it is sorted bt quantity")
     public void validateSortAcsByQuantity(){
         techGlobalSortableTablesPage.ascByQuantity.click();
-        List<WebElement> column1Elements = TableData.getTableColumn(driver, 1);
-        ArrayList<Integer> column1IntegerValues = new ArrayList<>();
-        for (WebElement element : column1Elements) {
-            column1IntegerValues.add(Integer.parseInt(element.getText()));
-        }
-        for (int i = 1; i < column1IntegerValues.size(); i++) {
-            Assert.assertTrue(column1IntegerValues.get(i) >= column1IntegerValues.get(i - 1));
+        ArrayList<Integer> columnValues = addTableDataToList(1);
+        System.out.println(columnValues);
+        for (int i = 0; i < columnValues.size() - 1; i++) {
+            Assert.assertTrue(columnValues.get(i) <= columnValues.get(i + 1));
         }
     }
     /**
@@ -51,20 +56,15 @@ public class TechGlobalSortableTablesTest extends TechGlobalBase{
      Click on the Quantity sort button to toggle descending order
      Verify that the Quantity column of the table is sorted in descending order
      */
-    @Test(priority = 1, description = "Sort table by desc and validate it is sorted bt quantity")
+    @Test(priority = 2, description = "Sort table by desc and validate it is sorted bt quantity")
     public void validateSortDescByQuantity() {
         techGlobalSortableTablesPage.descByQuantity.click();
-        List<WebElement> column2Elements = TableData.getTableColumn(driver, 1);
-        ArrayList<Integer> column2IntegerValues = new ArrayList<>();
-        for (WebElement element : column2Elements) {
-            column2IntegerValues.add(Integer.parseInt(element.getText()));
-        }
-        for (int i = 0; i < column2IntegerValues.size() - 1; i++) {
-            Assert.assertTrue(column2IntegerValues.get(i) >= column2IntegerValues.get(i + 1));
+        ArrayList<Integer> columnValues = addTableDataToList(1);
+        System.out.println(columnValues);
+        for (int i = 0; i < columnValues.size() - 1; i++) {
+            Assert.assertTrue(columnValues.get(i) >= columnValues.get(i + 1));
         }
     }
-
-
     /**
      TEST3
      Go to https://techglobal-training.netlify.app/
@@ -74,8 +74,15 @@ public class TechGlobalSortableTablesTest extends TechGlobalBase{
      Click on the Price sort button to toggle Ascending Order
      Verify that the Price column of the table is sorted in ascending order
      */
-
-
+    @Test(priority = 3, description = "Sort table by asc and validate it is sorted bt price")
+    public void validateSortAscByPrice() {
+        techGlobalSortableTablesPage.ascByPrice.click();
+        ArrayList<Integer> columnValues = addTableDataToList(3);
+        System.out.println(columnValues);
+        for (int i = 0; i < columnValues.size() - 1; i++) {
+            Assert.assertTrue(columnValues.get(i) <= columnValues.get(i + 1));
+        }
+    }
     /**
      TEST4
      Go to https://techglobal-training.netlify.app/
@@ -85,4 +92,13 @@ public class TechGlobalSortableTablesTest extends TechGlobalBase{
      Click on the Price sort button to toggle descending order
      Verify that the Price column of the table is sorted in descending order
      */
+    @Test(priority = 4, description = "Sort table by desc and validate it is sorted bt price")
+    public void validateSortDescByPrice() {
+        techGlobalSortableTablesPage.descByPrice.click();
+        ArrayList<Integer> columnValues = addTableDataToList(3);
+        System.out.println(columnValues);
+        for (int i = 0; i < columnValues.size() - 1; i++) {
+            Assert.assertTrue(columnValues.get(i) >= columnValues.get(i + 1));
+        }
+    }
 }
