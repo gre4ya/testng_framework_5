@@ -1,10 +1,12 @@
 package scripts;
 
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalActionsPage;
 import pages.TechGlobalFrontendTestingHomePage;
+import utilities.WindowHandler;
 
 public class TechGlobalActionsTest extends TechGlobalBase{
 
@@ -34,7 +36,41 @@ public class TechGlobalActionsTest extends TechGlobalBase{
      */
     @Test(priority = 1, description = "Click first 3 boxes and validate the result")
     public void clickActions(){
+        Assert.assertEquals(driver.getCurrentUrl(),
+                "https://techglobal-training.netlify.app/frontend/actions");
+        Assert.assertTrue(techGlobalActionPage.clickBox.isDisplayed());
+        Assert.assertTrue(techGlobalActionPage.clickBox.isEnabled());
+        Assert.assertTrue(techGlobalActionPage.clickBox.isSelected());
+
+        Assert.assertTrue(techGlobalActionPage.rightClickBox.isDisplayed());
+        Assert.assertTrue(techGlobalActionPage.rightClickBox.isEnabled());
+        Assert.assertTrue(techGlobalActionPage.rightClickBox.isSelected());
+
+        Assert.assertTrue(techGlobalActionPage.doubleClickBox.isDisplayed());
+        Assert.assertTrue(techGlobalActionPage.doubleClickBox.isEnabled());
+        Assert.assertTrue(techGlobalActionPage.doubleClickBox.isSelected());
+
+        Assert.assertEquals(techGlobalActionPage.clickBox.getText(),
+                "Click on me");
+        Assert.assertEquals(techGlobalActionPage.rightClickBox.getText(),
+                "Right-Click on me");
+        Assert.assertEquals(techGlobalActionPage.doubleClickBox.getText(),
+                "Double-Click on me");
+
+
+
         actions.moveToElement(techGlobalActionPage.clickBox).click().perform();
+        Assert.assertEquals(techGlobalActionPage.clickResult.getText(),
+                "You clicked on a button!");
+
+        actions.moveToElement(techGlobalActionPage.rightClickBox).click().perform();
+        Assert.assertEquals(techGlobalActionPage.rightClickResult.getText(),
+                "You right-clicked on a button!");
+
+        actions.moveToElement(techGlobalActionPage.doubleClickBox).click().perform();
+        Assert.assertEquals(techGlobalActionPage.doubleClickResult.getText(),
+                "You double-clicked on a button!");
+
 
 
     }
