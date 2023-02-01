@@ -20,4 +20,7 @@ public class TechGlobalDynamicTablesPage extends TechGlobalBasePage{
     public WebElement totalAmount;
     @FindBy(css = "tbody td:nth-child(1)")
     public List<WebElement> tableRows;
+
+    @FindBy(css = "table")
+    public WebElement table;
 }

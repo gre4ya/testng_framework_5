@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalFrontendTestingHomePage;
 import pages.TechGlobalSortableTablesPage;
-import utilities.TableData;
+import utilities.TableHandler;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,7 @@ public class TechGlobalSortableTablesTest extends TechGlobalBase{
         techGlobalFrontendTestingHomePage.clickOnCard("Sortable Tables");
     }
     public ArrayList<Integer> addTableDataToList(int columnNumber){
-        List<WebElement> columnElements = TableData.getTableColumn(driver, columnNumber);
+        List<WebElement> columnElements = TableHandler.getTableColumn(driver, columnNumber);
         ArrayList<Integer> columnIntegerValues = new ArrayList<>();
         for (WebElement element : columnElements) {
             columnIntegerValues.add(Integer.parseInt(element.getText()));

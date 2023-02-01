@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalDynamicTablesPage;
 import pages.TechGlobalFrontendTestingHomePage;
-import utilities.TableData;
+import utilities.TableHandler;
 import utilities.TextHandler;
 
 import java.util.List;
@@ -56,6 +56,10 @@ public class TechGlobalDynamicTablesTest extends TechGlobalBase{
     public void validateDynamicTable(){
         techGlobalDynamicTablesPage.addProductButton.click();
 
+        /** storing initial table row size and validate it is 3 */
+        int initialTableSize = techGlobalDynamicTablesPage.tableRows.size();
+        Assert.assertEquals(initialTableSize, 3);
+
         /** store the current total amount before adding a new product and parse it to an int */
         int initialTotal = TextHandler.getInt(techGlobalDynamicTablesPage.totalAmount.getText());
 
@@ -64,10 +68,6 @@ public class TechGlobalDynamicTablesTest extends TechGlobalBase{
 
         /** storing all the products in an array, so we can add it */
         String[] products = {"2", "Apple Watch", "500"};
-
-        /** storing initial table row size and validate it is 3 */
-        int initialTableSize = techGlobalDynamicTablesPage.tableRows.size();
-        Assert.assertEquals(initialTableSize, 3);
 
         /** validate the total amount of the new product by multiplying quantity with price */
         int myProductTotal = Integer.parseInt(products[0]) * Integer.parseInt(products[2]);
@@ -82,10 +82,10 @@ public class TechGlobalDynamicTablesTest extends TechGlobalBase{
         Assert.assertEquals(techGlobalDynamicTablesPage.tableRows.size(), initialTableSize + 1);
 
         /**  get the total amount of the newly added product from the table */
-        int productTotal = TextHandler.getInt(TableData.getTableRow(driver, 4).get(3).getText());
+        int productTotal = TextHandler.getInt(TableHandler.getTableRow(driver, 4).get(3).getText());
 
         /**  get the row of the table that you need to check */
-        List<WebElement> tableRow = TableData.getTableRow(driver, 4);
+        List<WebElement> tableRow = TableHandler.getTableRow(driver, 4);
 
         /**  validate that values in the table match the values from product array*/
         IntStream.range(0, tableRow.size() - 1).forEach(i -> Assert.assertEquals(tableRow.get(i).getText(), products[i]));
