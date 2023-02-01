@@ -50,6 +50,7 @@
             <class name="scripts.TechGlobalFileUploadTest"/>
             <class name="scripts.TechGlobalFileDownloadTest"/>
             <class name="scripts.TechGlobalCalendarTest"/>
+            <class name="scripts.TechGlobalActionsTest"/>
         </classes>
     </test>
 </suite>

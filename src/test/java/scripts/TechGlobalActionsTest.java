@@ -1,7 +1,6 @@
 package scripts;
 
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -9,12 +8,10 @@ import org.testng.annotations.Test;
 import pages.TechGlobalActionsPage;
 import pages.TechGlobalFrontendTestingHomePage;
 import utilities.Waiter;
-import utilities.WindowHandler;
 
 import java.time.Duration;
 
 public class TechGlobalActionsTest extends TechGlobalBase{
-
     @BeforeMethod
     public void setPage(){
         techGlobalFrontendTestingHomePage = new TechGlobalFrontendTestingHomePage();
@@ -23,7 +20,6 @@ public class TechGlobalActionsTest extends TechGlobalBase{
         techGlobalFrontendTestingHomePage.clickOnCard("Actions");
         actions = new Actions(driver);
     }
-
     /**
      TEST1
      Go to https://techglobal-training.netlify.app/
@@ -67,7 +63,6 @@ public class TechGlobalActionsTest extends TechGlobalBase{
         Assert.assertEquals(techGlobalActionPage.doubleClickResult.getText(),
                 "You double-clicked on a button!");
     }
-
     /**
      TEST2
      Go to https://techglobal-training.netlify.app/
@@ -126,17 +121,21 @@ public class TechGlobalActionsTest extends TechGlobalBase{
      Then, copy the text and paste again
      Validate the value attribute for search input box is “TECHGLOBALTECHGLOBAL”
      */
-    @Test(priority = 4, description = "")
+    @Test(priority = 4, description = "Copy and paste actions")
     public void validateKeyboardInput(){
         actions.keyDown(Keys.SHIFT)
-                .sendKeys(techGlobalActionPage.inputBox, "techglobal")
-                .keyUp(Keys.SHIFT).perform();
-        Assert.assertEquals(techGlobalActionPage.inputBox.getAttribute("value"), "TECHGLOBAL");
+               .sendKeys(techGlobalActionPage.inputBox, "techglobal")
+               .keyUp(Keys.SHIFT).perform();
+         Assert.assertEquals(techGlobalActionPage.inputBox.getAttribute("value"), "TECHGLOBAL");
 
         actions.moveToElement(techGlobalActionPage.inputBox)
-                .keyDown(Keys.COMMAND).sendKeys("a").sendKeys("c")
-                .keyUp(Keys.COMMAND)
-                .keyDown(Keys.COMMAND).sendKeys("v").sendKeys("v").keyUp(Keys.COMMAND).perform();
-        Assert.assertEquals(techGlobalActionPage.inputBox.getAttribute("value"), "TECHGLOBALTECHGLOBAL");
+               .keyDown(Keys.COMMAND)
+               .sendKeys("a").sendKeys("c")
+               .keyUp(Keys.COMMAND)
+               .sendKeys(Keys.ARROW_RIGHT)
+               .keyDown(Keys.COMMAND)
+               .sendKeys("v")
+               .keyUp(Keys.COMMAND).perform();
+         Assert.assertEquals(techGlobalActionPage.inputBox.getAttribute("value"), "TECHGLOBALTECHGLOBAL");
     }
 }
