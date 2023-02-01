@@ -6,23 +6,23 @@ import org.openqa.selenium.support.FindBy;
 public class TechGlobalActionsPage extends TechGlobalBasePage{
     public TechGlobalActionsPage(){super();}
 
-    @FindBy()
+    @FindBy(id = "click")
     public WebElement clickBox;
-    @FindBy()
+    @FindBy(id = "click_result")
     public WebElement clickResult;
-    @FindBy()
+    @FindBy(id = "right-click")
     public WebElement rightClickBox;
-    @FindBy()
+    @FindBy(id = "right_click_result")
     public WebElement rightClickResult;
-    @FindBy()
+    @FindBy(id = "double-click")
     public WebElement doubleClickBox;
-    @FindBy()
+    @FindBy(id = "double_click_result")
     public WebElement doubleClickResult;
-    @FindBy()
+    @FindBy(id = "drag_element")
     public WebElement dragMeBox;
-    @FindBy()
+    @FindBy(id = "drop_element")
     public WebElement dropHereBox;
-    @FindBy()
+    @FindBy(id = "drag_and_drop_result")
     public WebElement dropHereResult;
     @FindBy()
     public WebElement inputBox;
