@@ -4,7 +4,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalFileDownloadPage;
 import pages.TechGlobalFrontendTestingHomePage;
-import utilities.Waiter;
 
 public class TechGlobalFileDownloadTest extends TechGlobalBase{
 
@@ -27,6 +26,5 @@ public class TechGlobalFileDownloadTest extends TechGlobalBase{
     @Test(priority = 1, description = "Validate file download")
     public void validateFileDownload(){
         techGlobalFileDownloadPage.downloadLink.click();
-        Waiter.pause(2);
     }
 }

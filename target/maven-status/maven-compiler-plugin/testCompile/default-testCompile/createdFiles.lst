@@ -12,7 +12,6 @@ pages/TechGlobalMultipleWindowsPage.class
 scripts/TechGlobalStaticTablesTest.class
 testng_knowledge/_10_Parameterization.class
 scripts/TechGlobalJavaExercisesHomeTest.class
-utilities/TableData.class
 testng_knowledge/_03_Priority_and_Dependency.class
 pages/TechGlobalSortableTablesPage.class
 pages/TechGlobalFileUploadPage.class
@@ -36,6 +35,8 @@ utilities/ConfigReader.class
 scripts/TechGlobalDynamicElementsTest.class
 scripts/TechGlobalFrontendTestingHomeTest.class
 testng_knowledge/_02_Assertions.class
+pages/TechGlobalActionsPage.class
+utilities/TableHandler.class
 pages/TechGlobalAlertsPage.class
 scripts/TechGlobalFooterTest.class
 scripts/TechGlobalRadioButtonsTest.class
@@ -46,6 +47,7 @@ scripts/TechGlobalFileDownloadTest.class
 pages/TechGlobalIFramesPage.class
 testng_knowledge/_01_Annotations.class
 scripts/TechGlobalFileUploadTest.class
+scripts/TechGlobalActionsTest.class
 utilities/Driver.class
 pages/TechGlobalDropdownsPage.class
 testng_knowledge/_08_Parallel_Test.class

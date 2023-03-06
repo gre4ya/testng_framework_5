@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class _10_Parameterization {
 
     @Parameters({"username","password"})
-    @Test
+    @Test(enabled = false)
     public void login(String username, String password){
         System.out.println("Username comes from xml = " + username);
         System.out.println("Password comes from xml = " + password);

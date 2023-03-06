@@ -1,4 +1,4 @@
-/Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/TableData.java
+/Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalActionsTest.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalCalendarPage.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalFooterTest.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/DropdownHandler.java
@@ -24,6 +24,7 @@
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalDynamicElementsPage.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalJavaExercisesHomeTest.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalBase.java
+/Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalActionsPage.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/scripts/TechGlobalFileDownloadTest.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalDropdownsPage.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/testng_knowledge/_10_Parameterization.java
@@ -40,6 +41,7 @@
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalAlertsPage.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/testng_knowledge/_04_TestDescription.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/AlertHandler.java
+/Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/TableHandler.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/pages/TechGlobalFileUploadPage.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/testng_knowledge/_05_SoftAssertion.java
 /Users/gre4ya/IdeaProjects/testng_framework_5/src/test/java/utilities/Waiter.java

@@ -1,6 +1,8 @@
 package utilities;
 
-public class AlertHandler {
+import scripts.TechGlobalBase;
+
+public class AlertHandler{
 
     public static void acceptAlert(){
         Driver.getDriver().switchTo().alert().accept();

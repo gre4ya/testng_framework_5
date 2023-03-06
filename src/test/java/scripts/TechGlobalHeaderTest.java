@@ -16,7 +16,8 @@ public class TechGlobalHeaderTest extends TechGlobalBase{
                 {
                 "Frontend Testing",
                 "Backend Testing",
-                "Java Exercises"
+                "Java Exercises",
+                "Mock Interviews",
                 };
         for (int i = 0; i < techGlobalBasePage.headerDropDownOptions.size(); i++) {
             Assert.assertTrue(techGlobalBasePage.headerDropDownOptions.get(i).isDisplayed());

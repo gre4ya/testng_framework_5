@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 public class TechGlobalSortableTablesPage extends TechGlobalBasePage{
     public TechGlobalSortableTablesPage(){super();}
 
-    @FindBy(id = "quantitiy_asc")
+    @FindBy(id = "quantity_asc")
     public WebElement ascByQuantity;
-    @FindBy(id = "quantitiy_desc")
+    @FindBy(id = "quantity_desc")
     public WebElement descByQuantity;
     @FindBy(id = "price_asc")
     public WebElement ascByPrice;
