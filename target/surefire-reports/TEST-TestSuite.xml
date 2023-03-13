@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="42" failures="3" name="TestSuite" time="48.133" errors="0" skipped="0">
+<testsuite tests="42" failures="0" name="TestSuite" time="26.822" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home/jre/lib"/>
@@ -64,148 +64,46 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="scripts.TechGlobalDropdownsTest" name="selectDeliveryOption" time="0.198"/>
-  <testcase classname="scripts.TechGlobalFrontendTestingHomeTest" name="validateFrontendTestingCards" time="1.723"/>
-  <testcase classname="scripts.TechGlobalDropdownsTest" name="selectProductOption" time="0.129"/>
-  <testcase classname="scripts.TechGlobalFrontendTestingHomeTest" name="validateFrontendTestingURL" time="0.687"/>
-  <testcase classname="scripts.TechGlobalLogoTest" name="validateTechGlobalLogo" time="0.154"/>
-  <testcase classname="scripts.TechGlobalSortableTablesTest" name="validateSortAcsByQuantity" time="10.082">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#quantitiy_asc&quot;}
-  (Session info: chrome=110.0.5481.177)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Andrews-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:10f3:8220:1202:7f5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_341&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/qv/t4vgk6w940q...}, goog:chromeOptions: {debuggerAddress: localhost:50835}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6dfd5c24dfcb9d25831f373789929bed
-*** Element info: {Using=id, value=quantitiy_asc}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#quantitiy_asc&quot;}
-  (Session info: chrome=110.0.5481.177)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Andrews-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:10f3:8220:1202:7f5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_341&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/qv/t4vgk6w940q...}, goog:chromeOptions: {debuggerAddress: localhost:50835}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6dfd5c24dfcb9d25831f373789929bed
-*** Element info: {Using=id, value=quantitiy_asc}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at scripts.TechGlobalSortableTablesTest.validateSortAcsByQuantity(TechGlobalSortableTablesTest.java:42)
-</failure>
-    <system-err>Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 41438
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1678141476.639][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-Mar 06, 2023 4:24:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-</system-err>
-  </testcase>
-  <testcase classname="scripts.TechGlobalSortableTablesTest" name="validateSortDescByQuantity" time="10.066">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#quantitiy_desc&quot;}
-  (Session info: chrome=110.0.5481.177)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Andrews-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:10f3:8220:1202:7f5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_341&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/qv/t4vgk6w940q...}, goog:chromeOptions: {debuggerAddress: localhost:50856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 25c6335fd9b50bcd7baec457054c35e5
-*** Element info: {Using=id, value=quantitiy_desc}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#quantitiy_desc&quot;}
-  (Session info: chrome=110.0.5481.177)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Andrews-MBP.local.tld&apos;, ip: &apos;fe80:0:0:0:10f3:8220:1202:7f5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_341&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/qv/t4vgk6w940q...}, goog:chromeOptions: {debuggerAddress: localhost:50856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 25c6335fd9b50bcd7baec457054c35e5
-*** Element info: {Using=id, value=quantitiy_desc}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at scripts.TechGlobalSortableTablesTest.validateSortDescByQuantity(TechGlobalSortableTablesTest.java:60)
-</failure>
-    <system-err>Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 32485
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1678141491.830][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-Mar 06, 2023 4:24:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-</system-err>
-  </testcase>
-  <testcase classname="scripts.TechGlobalDropdownsTest" name="selectColorOption" time="0.118"/>
-  <testcase classname="scripts.TechGlobalSortableTablesTest" name="validateSortAscByPrice" time="0.111"/>
-  <testcase classname="scripts.TechGlobalDropdownsTest" name="selectMacBookOption" time="0.885"/>
-  <testcase classname="scripts.TechGlobalDynamicElementsTest" name="dynamicElementsTest" time="0.887"/>
-  <testcase classname="scripts.TechGlobalDynamicTablesTest" name="popupValidation" time="0.09"/>
-  <testcase classname="scripts.TechGlobalDynamicTablesTest" name="validateDynamicTable" time="0.759"/>
-  <testcase classname="scripts.TechGlobalJavaExercisesHomeTest" name="validateJavaExercisesCards" time="1.94"/>
-  <testcase classname="scripts.TechGlobalAlertsTest" name="warningAlertValidation" time="0.223"/>
-  <testcase classname="scripts.TechGlobalAlertsTest" name="confirmationAlertValidation" time="0.239"/>
-  <testcase classname="scripts.TechGlobalAlertsTest" name="promptAlertValidation" time="0.415"/>
-  <testcase classname="scripts.TechGlobalRadioButtonsTest" name="javaRadioButtonValidation" time="1"/>
-  <testcase classname="scripts.TechGlobalRadioButtonsTest" name="languageRadioButtons1" time="0.987"/>
-  <testcase classname="scripts.TechGlobalRadioButtonsTest" name="languageRadioButtons2" time="1.317"/>
-  <testcase classname="scripts.TechGlobalFooterTest" name="validateCorrectTextDisplayFooter" time="0.174"/>
-  <testcase classname="scripts.TechGlobalFooterTest" name="validateSocialLinksFooter" time="0.145"/>
-  <testcase classname="scripts.TechGlobalFileUploadTest" name="validateFileUpload" time="0.129"/>
-  <testcase classname="scripts.TechGlobalFileDownloadTest" name="validateFileDownload" time="0.05"/>
-  <testcase classname="scripts.TechGlobalCalendarTest" name="validateDatePicker" time="0.616"/>
-  <testcase classname="scripts.TechGlobalSortableTablesTest" name="validateSortDescByPrice" time="0.119"/>
-  <testcase classname="scripts.TechGlobalStaticTablesTest" name="validateStaticTablesHeader" time="0.082"/>
-  <testcase classname="scripts.TechGlobalStaticTablesTest" name="validateStaticTablesRow1" time="0.054"/>
-  <testcase classname="scripts.TechGlobalStaticTablesTest" name="validateStaticTableColumn4" time="0.113"/>
-  <testcase classname="scripts.TechGlobalStaticTablesTest" name="validateAllCells" time="0.298"/>
-  <testcase classname="scripts.TechGlobalHeaderTest" name="validateTechGlobalHeaderDropdownOptions" time="0.414">
-    <failure message="3" type="java.lang.ArrayIndexOutOfBoundsException">java.lang.ArrayIndexOutOfBoundsException: 3
-	at scripts.TechGlobalHeaderTest.validateTechGlobalHeaderDropdownOptions(TechGlobalHeaderTest.java:24)
-</failure>
-    <system-err>Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 34035
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1678141618.109][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-Mar 06, 2023 4:26:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-</system-err>
-  </testcase>
-  <testcase classname="scripts.TechGlobalHeaderTest" name="validateTechGlobalHeaderDropdown" time="0.175"/>
-  <testcase classname="scripts.TechGlobalIFramesTest" name="validateInputText" time="0.237"/>
-  <testcase classname="scripts.TechGlobalIFramesTest" name="validateResultDisplay" time="0.441"/>
-  <testcase classname="scripts.TechGlobalActionsTest" name="clickActions" time="0.656"/>
-  <testcase classname="scripts.TechGlobalActionsTest" name="validateDragAndDropAction" time="1.586"/>
-  <testcase classname="scripts.TechGlobalActionsTest" name="keyboardActions" time="0.408"/>
-  <testcase classname="scripts.TechGlobalActionsTest" name="validateKeyboardInput" time="0.537"/>
-  <testcase classname="scripts.TechGlobalCheckBoxTest" name="validateCheckboxes1" time="1.722"/>
-  <testcase classname="scripts.TechGlobalCheckBoxTest" name="validateCheckboxes2" time="1.074"/>
-  <testcase classname="scripts.TechGlobalMultipleWindowsTest" name="validateTheAppleLink" time="1.939"/>
-  <testcase classname="scripts.TechGlobalMultipleWindowsTest" name="validateLinkURLs" time="5.154"/>
+  <testcase classname="scripts.TechGlobalDropdownsTest" name="selectDeliveryOption" time="0.359"/>
+  <testcase classname="scripts.TechGlobalFrontendTestingHomeTest" name="validateFrontendTestingCards" time="1.825"/>
+  <testcase classname="scripts.TechGlobalDropdownsTest" name="selectProductOption" time="0.086"/>
+  <testcase classname="scripts.TechGlobalFrontendTestingHomeTest" name="validateFrontendTestingURL" time="0.582"/>
+  <testcase classname="scripts.TechGlobalLogoTest" name="validateTechGlobalLogo" time="0.074"/>
+  <testcase classname="scripts.TechGlobalSortableTablesTest" name="validateSortAcsByQuantity" time="0.082"/>
+  <testcase classname="scripts.TechGlobalSortableTablesTest" name="validateSortDescByQuantity" time="0.092"/>
+  <testcase classname="scripts.TechGlobalDropdownsTest" name="selectColorOption" time="0.106"/>
+  <testcase classname="scripts.TechGlobalSortableTablesTest" name="validateSortAscByPrice" time="0.092"/>
+  <testcase classname="scripts.TechGlobalDropdownsTest" name="selectMacBookOption" time="0.384"/>
+  <testcase classname="scripts.TechGlobalDynamicElementsTest" name="dynamicElementsTest" time="0.853"/>
+  <testcase classname="scripts.TechGlobalDynamicTablesTest" name="popupValidation" time="0.127"/>
+  <testcase classname="scripts.TechGlobalDynamicTablesTest" name="validateDynamicTable" time="0.66"/>
+  <testcase classname="scripts.TechGlobalJavaExercisesHomeTest" name="validateJavaExercisesCards" time="1.679"/>
+  <testcase classname="scripts.TechGlobalAlertsTest" name="warningAlertValidation" time="0.13"/>
+  <testcase classname="scripts.TechGlobalAlertsTest" name="confirmationAlertValidation" time="0.224"/>
+  <testcase classname="scripts.TechGlobalAlertsTest" name="promptAlertValidation" time="0.492"/>
+  <testcase classname="scripts.TechGlobalRadioButtonsTest" name="javaRadioButtonValidation" time="0.903"/>
+  <testcase classname="scripts.TechGlobalRadioButtonsTest" name="languageRadioButtons1" time="0.934"/>
+  <testcase classname="scripts.TechGlobalRadioButtonsTest" name="languageRadioButtons2" time="1.147"/>
+  <testcase classname="scripts.TechGlobalFooterTest" name="validateCorrectTextDisplayFooter" time="0.113"/>
+  <testcase classname="scripts.TechGlobalFooterTest" name="validateSocialLinksFooter" time="0.202"/>
+  <testcase classname="scripts.TechGlobalFileUploadTest" name="validateFileUpload" time="0.123"/>
+  <testcase classname="scripts.TechGlobalFileDownloadTest" name="validateFileDownload" time="0.043"/>
+  <testcase classname="scripts.TechGlobalCalendarTest" name="validateDatePicker" time="0.563"/>
+  <testcase classname="scripts.TechGlobalSortableTablesTest" name="validateSortDescByPrice" time="0.099"/>
+  <testcase classname="scripts.TechGlobalStaticTablesTest" name="validateStaticTablesHeader" time="0.075"/>
+  <testcase classname="scripts.TechGlobalStaticTablesTest" name="validateStaticTablesRow1" time="0.058"/>
+  <testcase classname="scripts.TechGlobalStaticTablesTest" name="validateStaticTableColumn4" time="0.112"/>
+  <testcase classname="scripts.TechGlobalStaticTablesTest" name="validateAllCells" time="0.305"/>
+  <testcase classname="scripts.TechGlobalHeaderTest" name="validateTechGlobalHeaderDropdownOptions" time="0.473"/>
+  <testcase classname="scripts.TechGlobalHeaderTest" name="validateTechGlobalHeaderDropdown" time="0.172"/>
+  <testcase classname="scripts.TechGlobalIFramesTest" name="validateInputText" time="0.229"/>
+  <testcase classname="scripts.TechGlobalIFramesTest" name="validateResultDisplay" time="0.663"/>
+  <testcase classname="scripts.TechGlobalActionsTest" name="clickActions" time="0.652"/>
+  <testcase classname="scripts.TechGlobalActionsTest" name="validateDragAndDropAction" time="1.518"/>
+  <testcase classname="scripts.TechGlobalActionsTest" name="keyboardActions" time="0.4"/>
+  <testcase classname="scripts.TechGlobalActionsTest" name="validateKeyboardInput" time="0.443"/>
+  <testcase classname="scripts.TechGlobalCheckBoxTest" name="validateCheckboxes1" time="1.047"/>
+  <testcase classname="scripts.TechGlobalCheckBoxTest" name="validateCheckboxes2" time="1.064"/>
+  <testcase classname="scripts.TechGlobalMultipleWindowsTest" name="validateTheAppleLink" time="2.007"/>
+  <testcase classname="scripts.TechGlobalMultipleWindowsTest" name="validateLinkURLs" time="5.63"/>
 </testsuite>

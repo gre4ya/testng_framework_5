@@ -57,5 +57,5 @@ public class TechGlobalDropdownsTest extends TechGlobalBase{
     techGlobalDropdownsPage.submitButton.click();
     Assert.assertEquals(techGlobalDropdownsPage.resultMessage.getText(),
             "Your Silver MacBook Pro 13 will be delivered to you.");
-  }
+    }
 }

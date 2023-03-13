@@ -1,16 +1,11 @@
 package scripts;
 
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalFrontendTestingHomePage;
 import pages.TechGlobalWaitsPage;
 import utilities.Waiter;
-
-import java.time.Duration;
 
 public class TechGlobalWaitsTest extends TechGlobalBase {
     @BeforeMethod
@@ -32,5 +27,4 @@ public class TechGlobalWaitsTest extends TechGlobalBase {
         Waiter.waitForVisibilityOfElement(techGlobalWaitsPage.blueBox, 60);
         Assert.assertTrue(techGlobalWaitsPage.blueBox.isDisplayed());
     }
-
 }
