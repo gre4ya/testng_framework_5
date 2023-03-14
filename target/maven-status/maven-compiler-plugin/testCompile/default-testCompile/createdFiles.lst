@@ -39,6 +39,7 @@ pages/TechGlobalActionsPage.class
 utilities/TableHandler.class
 pages/TechGlobalAlertsPage.class
 scripts/TechGlobalFooterTest.class
+utilities/Extent_Reports.class
 scripts/TechGlobalRadioButtonsTest.class
 pages/TechGlobalDynamicElementsPage.class
 testng_knowledge/_09_Parallel_Test.class

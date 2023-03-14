@@ -1,5 +1,7 @@
 package scripts;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
 import org.openqa.selenium.Alert;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -7,6 +9,8 @@ import org.testng.annotations.Test;
 import pages.TechGlobalAlertsPage;
 import pages.TechGlobalFrontendTestingHomePage;
 import utilities.AlertHandler;
+
+import java.io.IOException;
 
 public class TechGlobalAlertsTest extends TechGlobalBase{
 
@@ -30,7 +34,9 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
     Validate the result message equals "You accepted warning by clicking OK."
      */
     @Test(priority = 1, description = "Validate Warning alert")
-    public void warningAlertValidation(){
+    public void warningAlertValidation() throws IOException {
+        test = extent.createTest("Warning alert Test");
+        test.log(Status.INFO, "Starting Test");
         techGlobalAlertsPage.clickOnAlert("Warning alert");
 
         // Switching to alert
@@ -39,6 +45,8 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
         // Validate the alert text
         Assert.assertEquals(alert.getText(),
                 "You are on TechGlobal Training application.");
+        test.pass("Alert text validation passed", MediaEntityBuilder.createScreenCaptureFromPath("screenshots/screenshot.png").build());
+        test.addScreenCaptureFromPath("screenshot.png");
 
         // Confirming the alert button
         alert.accept();
@@ -46,6 +54,9 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
         // Validate the result text
         Assert.assertEquals(techGlobalAlertsPage.result.getText(),
                 "You accepted warning by clicking OK.");
+        test.pass("Alert result text validation passed",  MediaEntityBuilder.createScreenCaptureFromPath("screenshots/screenshot.png").build());
+        test.addScreenCaptureFromPath("screenshot.png");
+        test.info("Test Completed");
     }
     /**
     CONFIRMATION ALERT
@@ -62,16 +73,20 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
     Validate the result message equals "You confirmed the alert by clicking OK."
      */
     @Test(priority = 2, description = "Validate Confirmation alert")
-    public void confirmationAlertValidation(){
-
+    public void confirmationAlertValidation() throws IOException {
+        test = extent.createTest("Confirmation Alert Test");
+        test.log(Status.INFO, "Starting Test");
         techGlobalAlertsPage.clickOnAlert("Confirmation alert");
         Assert.assertEquals(AlertHandler.getAlertText(),
                 "Would you like to stay on TechGlobal Training application?");
-
+        test.pass("Confirmation Alert text validation passed",  MediaEntityBuilder.createScreenCaptureFromPath("screenshots/screenshot.png").build());
+        test.addScreenCaptureFromPath("screenshot.png");
         AlertHandler.dismissAlert();
 
         Assert.assertEquals(techGlobalAlertsPage.result.getText(),
                 "You rejected the alert by clicking Cancel.");
+        test.pass("Rejected Alert validation passed" , MediaEntityBuilder.createScreenCaptureFromPath("screenshots/screenshot.png").build());
+        test.addScreenCaptureFromPath("screenshot.png");
 
         techGlobalAlertsPage.clickOnAlert("Confirmation alert");
 
@@ -79,6 +94,9 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
 
         Assert.assertEquals(techGlobalAlertsPage.result.getText(),
                 "You confirmed the alert by clicking OK.");
+        test.pass("Confirmation Alert passed",  MediaEntityBuilder.createScreenCaptureFromPath("screenshots/screenshot.png").build());
+        test.addScreenCaptureFromPath("screenshot.png");
+        test.info("Test Completed");
     }
     /**
     PROMPT ALERT
@@ -100,22 +118,29 @@ public class TechGlobalAlertsTest extends TechGlobalBase{
      */
     @Test(priority = 3, description = "Validate Prompt alert")
     public void promptAlertValidation(){
+        test = extent.createTest("Prompt Alert Test");
+        test.log(Status.INFO, "Starting Test");
         String testMassage = "";
         techGlobalAlertsPage.clickOnPromptAlert();
         Assert.assertEquals(AlertHandler.getAlertText(),
                 "What would you like to say to TechGlobal?");
+        test.pass("Prompt Alert text validation passed");
         AlertHandler.dismissAlert();
         Assert.assertEquals(techGlobalAlertsPage.result.getText(),
                 "You rejected the alert by clicking Cancel.");
+        test.pass("Reject message validation passed");
         techGlobalAlertsPage.clickOnPromptAlert();
         AlertHandler.acceptAlert();
         Assert.assertEquals(techGlobalAlertsPage.result.getText(),
                 "You entered \"\" in the alert and clicked OK.");
+        test.pass("Alert message validation passed");
         techGlobalAlertsPage.clickOnPromptAlert();
         testMassage = "Hello";
         AlertHandler.sendKeysToAlert(testMassage);
         AlertHandler.acceptAlert();
         Assert.assertEquals(techGlobalAlertsPage.result.getText(),
                 "You entered \"" + testMassage +  "\" in the alert and clicked OK.");
+        test.pass("Test Alert text message validation passed");
+        test.info("Test Completed");
     }
 }
